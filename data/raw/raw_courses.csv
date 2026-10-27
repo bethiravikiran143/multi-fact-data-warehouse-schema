@@ -1,0 +1,57 @@
+course_code,course_name,dept_code,course_type,credits,semester_offered
+MA101,Linear Algebra & Calculus,CSE,Core Theory,4,1
+PH101,Applied Engineering Physics,ECE,Core Theory,3,1
+CS101,Programming for Problem Solving (C & Python),CSE,Core Theory,3,1
+ME101,Engineering Graphics & Design,MECH,Lab/Practical,3,1
+MA201,Differential Equations & Numerical Methods,MECH,Core Theory,4,2
+EE201,Basic Electrical & Electronics Engineering,ECE,Core Theory,3,2
+CS201,Data Structures & Algorithms,CSE,Core Theory,3,2
+ME301,Engineering Mechanics & Dynamics,MECH,Core Theory,4,3
+ME302,Thermodynamics & Thermal Power,MECH,Core Theory,3,3
+ME303,Manufacturing Technology & Metallurgy,MECH,Core Theory,3,3
+ME401,Fluid Mechanics & Hydraulic Machinery,MECH,Core Theory,4,4
+ME402,Kinematics of Machinery,MECH,Core Theory,3,4
+ME501,Design of Machine Elements,MECH,Core Theory,4,5
+ME502,Heat Transfer & Refrigeration,MECH,Core Theory,3,5
+ME503,Industrial Robotics & Automation,MECH,Professional Elective,3,5
+ME601,CAD / CAM / CAE & FEA Analysis,MECH,Core Theory,3,6
+ME602,Automobile Engineering,MECH,Professional Elective,3,6
+ME701,Operations Research & Production Mgmt,MECH,Core Theory,3,7
+ME801,Renewable Energy & Power Plant Engg,MECH,Core Theory,3,8
+CS301,Database Management Systems (DBMS),CSE,Core Theory,3,3
+CS302,Computer Organization & Architecture,CSE,Core Theory,3,3
+CS401,Operating Systems & System Programming,CSE,Core Theory,3,4
+CS402,Design & Analysis of Algorithms,CSE,Core Theory,4,4
+CS501,Data Warehousing & Data Mining,CSE,Core Theory,3,5
+CS502,Computer Networks & Security,CSE,Core Theory,3,5
+CS601,Software Engineering & Agile DevOps,CSE,Core Theory,3,6
+CS602,Cloud Computing & Distributed Systems,CSE,Professional Elective,3,6
+CS701,Information & Network Cyber Security,CSE,Core Theory,3,7
+CS801,Full Stack Web & Microservices,CSE,Core Theory,3,8
+AI301,Foundations of Artificial Intelligence,AIDS,Core Theory,3,3
+AI302,Python for Data Science & EDA,AIDS,Core Theory,3,3
+AI401,Machine Learning Algorithms & Models,AIDS,Core Theory,4,4
+AI402,Big Data Technologies (Hadoop & Spark),AIDS,Core Theory,3,4
+AI501,Deep Learning & Neural Architectures,AIDS,Core Theory,4,5
+AI502,Business Intelligence & Data Visualization,AIDS,Core Theory,3,5
+AI601,Natural Language Processing & LLMs,AIDS,Core Theory,3,6
+AI701,Computer Vision & Pattern Recognition,AIDS,Professional Elective,3,7
+AI801,MLOps & AI Model Deployment,AIDS,Core Theory,3,8
+EC301,Electronic Devices & Analog Circuits,ECE,Core Theory,3,3
+EC302,Digital Logic Design & Verilog,ECE,Core Theory,3,3
+EC401,Signals & Linear Systems,ECE,Core Theory,4,4
+EC402,Electromagnetic Waves & Antennas,ECE,Core Theory,3,4
+EC501,Microprocessors & Embedded Systems,ECE,Core Theory,3,5
+EC502,Digital Signal Processing (DSP),ECE,Core Theory,4,5
+EC601,VLSI Design & Architecture,ECE,Core Theory,3,6
+EC701,Wireless & Cellular Communications,ECE,Core Theory,3,7
+EC801,IoT Architectures & Sensors,ECE,Core Theory,3,8
+CE301,Strength of Materials & Mechanics,CIVIL,Core Theory,4,3
+CE302,Fluid Mechanics in Civil Systems,CIVIL,Core Theory,3,3
+CE401,Structural Analysis & RCC Design,CIVIL,Core Theory,4,4
+CE402,Surveying & Geomatics,CIVIL,Core Theory,3,4
+CE501,Geotechnical & Soil Engineering,CIVIL,Core Theory,3,5
+CE502,Hydrology & Water Resources,CIVIL,Core Theory,3,5
+CE601,Transportation & Highway Engineering,CIVIL,Core Theory,3,6
+CE701,Environmental Engineering & Waste Mgmt,CIVIL,Core Theory,3,7
+CE801,Construction Planning & Project Mgmt,CIVIL,Core Theory,3,8

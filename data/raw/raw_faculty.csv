@@ -1,0 +1,18 @@
+faculty_id,faculty_name,dept_code,designation,qualification,experience_years
+FAC_ME01,Dr. N. Suresh Babu,MECH,Associate Professor & HOD,Ph.D.,16
+FAC_ME02,Dr. Ramesh Babu,MECH,Professor,Ph.D.,21
+FAC_ME03,Mrs. T. Anitha,MECH,Assistant Professor,M.Tech,8
+FAC_ME04,Mr. S. Mahesh,MECH,Assistant Professor,M.Tech,6
+FAC_CS01,Dr. V. Ramanathan,CSE,Professor & HOD,Ph.D.,22
+FAC_CS02,Dr. A. Sudheer Kumar,CSE,Associate Professor,Ph.D.,14
+FAC_CS03,Mrs. N. Lakshmi,CSE,Assistant Professor,M.Tech,9
+FAC_CS04,Mr. G. Pradeep,CSE,Assistant Professor,M.Tech,7
+FAC_AI01,Dr. P. Sunitha,AIDS,Professor & HOD,Ph.D.,17
+FAC_AI02,Dr. M. Karthik,AIDS,Associate Professor,Ph.D.,12
+FAC_AI03,Mr. B. Vikram,AIDS,Assistant Professor,M.Tech,5
+FAC_EC01,Dr. K. Srinivas Rao,ECE,Professor & HOD,Ph.D.,24
+FAC_EC02,Dr. B. Radhika,ECE,Associate Professor,Ph.D.,13
+FAC_EC03,Mr. Ch. Naresh,ECE,Assistant Professor,M.Tech,8
+FAC_CE01,Dr. M. Venkat Reddy,CIVIL,Professor & HOD,Ph.D.,20
+FAC_CE02,Mr. D. Suresh,CIVIL,Assistant Professor,M.Tech,10
+FAC_CE03,Ms. K. Swathi,CIVIL,Assistant Professor,M.Tech,6

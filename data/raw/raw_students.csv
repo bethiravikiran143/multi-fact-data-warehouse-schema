@@ -1,0 +1,401 @@
+roll_no,student_name,gender,dept_code,cohort_batch,admission_type,current_year,current_semester,academic_status,mobile_no,gmail_id,parent_mobile
+21CS1A0001,Divya Reddy,Female,CSE,2021-2025,Regular,4,8,Graduated,+91 9825323907,divya.21cs1a0001@gmail.com,+91 9440698396
+21CS1A0002,Meghana Naidu,Female,CSE,2021-2025,Regular,4,8,Graduated,+91 9848077911,meghana.21cs1a0002@gmail.com,+91 9417998363
+21CS1A0003,Deepak Rao,Male,CSE,2021-2025,Regular,4,8,Graduated,+91 9820422541,deepak.21cs1a0003@gmail.com,+91 9433931082
+21CS1A0004,Akhil Reddy,Male,CSE,2021-2025,Regular,4,8,Graduated,+91 9835184921,akhil.21cs1a0004@gmail.com,+91 9426867319
+21CS1A0005,Manoj Reddy,Male,CSE,2021-2025,Regular,4,8,Graduated,+91 9896780551,manoj.21cs1a0005@gmail.com,+91 9426369246
+21CS1A0006,Tarun Naidu,Male,CSE,2021-2025,Regular,4,8,Graduated,+91 9834439703,tarun.21cs1a0006@gmail.com,+91 9497244789
+21CS1A0007,Nandini Reddy,Female,CSE,2021-2025,Regular,4,8,Graduated,+91 9827932026,nandini.21cs1a0007@gmail.com,+91 9410749308
+21CS1A0008,Ishaan Nair,Male,CSE,2021-2025,Regular,4,8,Graduated,+91 9899762744,ishaan.21cs1a0008@gmail.com,+91 9419549894
+21CS1A0009,Harini Goud,Female,CSE,2021-2025,Management,4,8,Graduated,+91 9839367171,harini.21cs1a0009@gmail.com,+91 9471829980
+21CS1A0010,Ramya Kumar,Female,CSE,2021-2025,Regular,4,8,Graduated,+91 9860542842,ramya.21cs1a0010@gmail.com,+91 9420512115
+21CS1A0011,Deepak Mishra,Male,CSE,2021-2025,Lateral Entry,4,8,Graduated,+91 9820294891,deepak.21cs1a0011@gmail.com,+91 9464716075
+21CS1A0012,Nikhil Sharma,Male,CSE,2021-2025,Regular,4,8,Graduated,+91 9879710985,nikhil.21cs1a0012@gmail.com,+91 9432983439
+21CS1A0013,Divya Deshmukh,Female,CSE,2021-2025,Regular,4,8,Graduated,+91 9811352935,divya.21cs1a0013@gmail.com,+91 9421236749
+21CS1A0014,Pranay Mishra,Male,CSE,2021-2025,Regular,4,8,Graduated,+91 9835597144,pranay.21cs1a0014@gmail.com,+91 9420388326
+21CS1A0015,Bhavya Sharma,Female,CSE,2021-2025,Regular,4,8,Graduated,+91 9865696530,bhavya.21cs1a0015@gmail.com,+91 9472151460
+21CS1A0016,Pranay Rao,Male,CSE,2021-2025,Lateral Entry,4,8,Graduated,+91 9819184079,pranay.21cs1a0016@gmail.com,+91 9478528960
+21CS1A0017,Deepak Deshmukh,Male,CSE,2021-2025,Regular,4,8,Graduated,+91 9857804050,deepak.21cs1a0017@gmail.com,+91 9466465474
+21CS1A0018,Sneha Patel,Female,CSE,2021-2025,Regular,4,8,Graduated,+91 9880814552,sneha.21cs1a0018@gmail.com,+91 9464115510
+21CS1A0019,Lokesh Chowdary,Male,CSE,2021-2025,Regular,4,8,Graduated,+91 9852319665,lokesh.21cs1a0019@gmail.com,+91 9421357401
+21CS1A0020,Bhavya Patel,Female,CSE,2021-2025,Regular,4,8,Graduated,+91 9850862078,bhavya.21cs1a0020@gmail.com,+91 9440373170
+21AI1A0001,Meghana Patel,Female,AIDS,2021-2025,Regular,4,8,Graduated,+91 9865563846,meghana.21ai1a0001@gmail.com,+91 9490748851
+21AI1A0002,Nandini Naidu,Female,AIDS,2021-2025,Regular,4,8,Graduated,+91 9835144191,nandini.21ai1a0002@gmail.com,+91 9474103525
+21AI1A0003,Ananya Naidu,Female,AIDS,2021-2025,Lateral Entry,4,8,Graduated,+91 9896544911,ananya.21ai1a0003@gmail.com,+91 9482123966
+21AI1A0004,Rahul Deshmukh,Male,AIDS,2021-2025,Regular,4,8,Graduated,+91 9868448931,rahul.21ai1a0004@gmail.com,+91 9415466312
+21AI1A0005,Lokesh Gupta,Male,AIDS,2021-2025,Regular,4,8,Graduated,+91 9818873700,lokesh.21ai1a0005@gmail.com,+91 9413692919
+21AI1A0006,Vinay Deshmukh,Male,AIDS,2021-2025,Lateral Entry,4,8,Graduated,+91 9834228714,vinay.21ai1a0006@gmail.com,+91 9486380464
+21AI1A0007,Veda Verma,Female,AIDS,2021-2025,Regular,4,8,Graduated,+91 9875667571,veda.21ai1a0007@gmail.com,+91 9449378804
+21AI1A0008,Meghana Chowdary,Female,AIDS,2021-2025,Regular,4,8,Graduated,+91 9853217455,meghana.21ai1a0008@gmail.com,+91 9420663939
+21AI1A0009,Teja Deshmukh,Male,AIDS,2021-2025,Regular,4,8,Graduated,+91 9817652282,teja.21ai1a0009@gmail.com,+91 9450798620
+21AI1A0010,Ganesh Yadav,Male,AIDS,2021-2025,Regular,4,8,Graduated,+91 9885183227,ganesh.21ai1a0010@gmail.com,+91 9452636732
+21AI1A0011,Ananya Kumar,Female,AIDS,2021-2025,Regular,4,8,Graduated,+91 9888135688,ananya.21ai1a0011@gmail.com,+91 9429832880
+21AI1A0012,Ishaan Nair,Male,AIDS,2021-2025,Regular,4,8,Graduated,+91 9887568536,ishaan.21ai1a0012@gmail.com,+91 9424285493
+21AI1A0013,Suresh Deshmukh,Male,AIDS,2021-2025,Regular,4,8,Graduated,+91 9852849824,suresh.21ai1a0013@gmail.com,+91 9488548171
+21AI1A0014,Veda Chowdary,Female,AIDS,2021-2025,Management,4,8,Graduated,+91 9880013666,veda.21ai1a0014@gmail.com,+91 9471816235
+21AI1A0015,Aarav Kumar,Male,AIDS,2021-2025,Regular,4,8,Graduated,+91 9817984421,aarav.21ai1a0015@gmail.com,+91 9431066903
+21AI1A0016,Nandini Gupta,Female,AIDS,2021-2025,Regular,4,8,Graduated,+91 9844543391,nandini.21ai1a0016@gmail.com,+91 9422222778
+21AI1A0017,Teja Patel,Male,AIDS,2021-2025,Regular,4,8,Graduated,+91 9878678175,teja.21ai1a0017@gmail.com,+91 9428140499
+21AI1A0018,Nikhil Patel,Male,AIDS,2021-2025,Regular,4,8,Graduated,+91 9819566639,nikhil.21ai1a0018@gmail.com,+91 9449345861
+21AI1A0019,Deepak Joshi,Male,AIDS,2021-2025,Lateral Entry,4,8,Graduated,+91 9885324734,deepak.21ai1a0019@gmail.com,+91 9467341753
+21AI1A0020,Yamini Goud,Female,AIDS,2021-2025,Regular,4,8,Graduated,+91 9896848987,yamini.21ai1a0020@gmail.com,+91 9466771770
+21EC1A0001,Ishaan Reddy,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9821639876,ishaan.21ec1a0001@gmail.com,+91 9446329323
+21EC1A0002,Vinay Reddy,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9868510007,vinay.21ec1a0002@gmail.com,+91 9444423704
+21EC1A0003,Sneha Joshi,Female,ECE,2021-2025,Regular,4,8,Graduated,+91 9890076241,sneha.21ec1a0003@gmail.com,+91 9417147752
+21EC1A0004,Meghana Rao,Female,ECE,2021-2025,Regular,4,8,Graduated,+91 9827451988,meghana.21ec1a0004@gmail.com,+91 9495922790
+21EC1A0005,Vinay Rao,Male,ECE,2021-2025,Management,4,8,Graduated,+91 9889343994,vinay.21ec1a0005@gmail.com,+91 9471697886
+21EC1A0006,Ganesh Verma,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9886106064,ganesh.21ec1a0006@gmail.com,+91 9431887347
+21EC1A0007,Ishaan Chowdary,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9874779457,ishaan.21ec1a0007@gmail.com,+91 9435381324
+21EC1A0008,Teja Goud,Male,ECE,2021-2025,Management,4,8,Graduated,+91 9836774576,teja.21ec1a0008@gmail.com,+91 9458718097
+21EC1A0009,Kavya Joshi,Female,ECE,2021-2025,Regular,4,8,Graduated,+91 9814209244,kavya.21ec1a0009@gmail.com,+91 9415394790
+21EC1A0010,Sneha Iyer,Female,ECE,2021-2025,Lateral Entry,4,8,Graduated,+91 9818549205,sneha.21ec1a0010@gmail.com,+91 9441912937
+21EC1A0011,Varun Kumar,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9852400608,varun.21ec1a0011@gmail.com,+91 9455975049
+21EC1A0012,Bhavya Gupta,Female,ECE,2021-2025,Regular,4,8,Graduated,+91 9838328077,bhavya.21ec1a0012@gmail.com,+91 9418274882
+21EC1A0013,Manoj Naidu,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9819236927,manoj.21ec1a0013@gmail.com,+91 9448077340
+21EC1A0014,Ananya Naidu,Female,ECE,2021-2025,Regular,4,8,Graduated,+91 9890293981,ananya.21ec1a0014@gmail.com,+91 9449721895
+21EC1A0015,Akhil Gupta,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9878687374,akhil.21ec1a0015@gmail.com,+91 9439536512
+21EC1A0016,Meghana Chowdary,Female,ECE,2021-2025,Regular,4,8,Graduated,+91 9868389167,meghana.21ec1a0016@gmail.com,+91 9440762316
+21EC1A0017,Lokesh Verma,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9829998516,lokesh.21ec1a0017@gmail.com,+91 9461927628
+21EC1A0018,Vikas Naidu,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9857767491,vikas.21ec1a0018@gmail.com,+91 9479764363
+21EC1A0019,Tarun Goud,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9889785230,tarun.21ec1a0019@gmail.com,+91 9432749620
+21EC1A0020,Teja Mishra,Male,ECE,2021-2025,Regular,4,8,Graduated,+91 9816657588,teja.21ec1a0020@gmail.com,+91 9438472936
+21ME1A0001,Veda Sharma,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9886292398,veda.21me1a0001@gmail.com,+91 9470133026
+21ME1A0002,Deepak Sharma,Male,MECH,2021-2025,Regular,4,8,Graduated,+91 9857322299,deepak.21me1a0002@gmail.com,+91 9485505468
+21ME1A0003,Ramya Kumar,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9846983611,ramya.21me1a0003@gmail.com,+91 9495622510
+21ME1A0004,Kavya Iyer,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9873219014,kavya.21me1a0004@gmail.com,+91 9459055344
+21ME1A0005,Jahnavi Chowdary,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9836787318,jahnavi.21me1a0005@gmail.com,+91 9493424098
+21ME1A0006,Bhavya Iyer,Female,MECH,2021-2025,Lateral Entry,4,8,Graduated,+91 9812657368,bhavya.21me1a0006@gmail.com,+91 9451318225
+21ME1A0007,Deepak Sharma,Male,MECH,2021-2025,Regular,4,8,Graduated,+91 9860872347,deepak.21me1a0007@gmail.com,+91 9469895490
+21ME1A0008,Aarav Rao,Male,MECH,2021-2025,Management,4,8,Graduated,+91 9874300737,aarav.21me1a0008@gmail.com,+91 9418899011
+21ME1A0009,Meghana Patel,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9825979352,meghana.21me1a0009@gmail.com,+91 9482789527
+21ME1A0010,Vikas Goud,Male,MECH,2021-2025,Lateral Entry,4,8,Graduated,+91 9874309608,vikas.21me1a0010@gmail.com,+91 9496042310
+21ME1A0011,Ananya Patel,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9841979660,ananya.21me1a0011@gmail.com,+91 9480256390
+21ME1A0012,Suresh Chowdary,Male,MECH,2021-2025,Management,4,8,Graduated,+91 9896451461,suresh.21me1a0012@gmail.com,+91 9445361100
+21ME1A0013,Veda Joshi,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9828235566,veda.21me1a0013@gmail.com,+91 9440743745
+21ME1A0014,Vinay Verma,Male,MECH,2021-2025,Regular,4,8,Graduated,+91 9855228274,vinay.21me1a0014@gmail.com,+91 9470345827
+21ME1A0015,Lokesh Sharma,Male,MECH,2021-2025,Regular,4,8,Graduated,+91 9844163006,lokesh.21me1a0015@gmail.com,+91 9431770459
+21ME1A0016,Ananya Gupta,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9833216350,ananya.21me1a0016@gmail.com,+91 9459490101
+21ME1A0017,Vikas Patel,Male,MECH,2021-2025,Regular,4,8,Graduated,+91 9833600744,vikas.21me1a0017@gmail.com,+91 9492349572
+21ME1A0018,Yamini Rao,Female,MECH,2021-2025,Lateral Entry,4,8,Graduated,+91 9834434907,yamini.21me1a0018@gmail.com,+91 9432550154
+21ME1A0019,Bhavya Rao,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9830357814,bhavya.21me1a0019@gmail.com,+91 9470666574
+21ME1A0020,Meghana Deshmukh,Female,MECH,2021-2025,Regular,4,8,Graduated,+91 9834561186,meghana.21me1a0020@gmail.com,+91 9462559185
+21CI1A0001,Meghana Sharma,Female,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9852276922,meghana.21ci1a0001@gmail.com,+91 9456095296
+21CI1A0002,Tarun Gupta,Male,CIVIL,2021-2025,Management,4,8,Graduated,+91 9878139999,tarun.21ci1a0002@gmail.com,+91 9433495785
+21CI1A0003,Lokesh Gupta,Male,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9843023938,lokesh.21ci1a0003@gmail.com,+91 9461575376
+21CI1A0004,Swetha Verma,Female,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9892067716,swetha.21ci1a0004@gmail.com,+91 9434309773
+21CI1A0005,Pooja Iyer,Female,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9873890667,pooja.21ci1a0005@gmail.com,+91 9442487559
+21CI1A0006,Bhavya Reddy,Female,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9862832087,bhavya.21ci1a0006@gmail.com,+91 9443785061
+21CI1A0007,Deepak Rao,Male,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9886641688,deepak.21ci1a0007@gmail.com,+91 9420282564
+21CI1A0008,Yamini Chowdary,Female,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9814722480,yamini.21ci1a0008@gmail.com,+91 9496821249
+21CI1A0009,Sai Rao,Male,CIVIL,2021-2025,Lateral Entry,4,8,Graduated,+91 9899191779,sai.21ci1a0009@gmail.com,+91 9444448982
+21CI1A0010,Sneha Joshi,Female,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9880383757,sneha.21ci1a0010@gmail.com,+91 9411616713
+21CI1A0011,Pooja Reddy,Female,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9843036646,pooja.21ci1a0011@gmail.com,+91 9412598678
+21CI1A0012,Pooja Kumar,Female,CIVIL,2021-2025,Management,4,8,Graduated,+91 9895862043,pooja.21ci1a0012@gmail.com,+91 9492388164
+21CI1A0013,Ganesh Chowdary,Male,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9851877328,ganesh.21ci1a0013@gmail.com,+91 9418875410
+21CI1A0014,Deepak Verma,Male,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9894483058,deepak.21ci1a0014@gmail.com,+91 9464749788
+21CI1A0015,Lokesh Gupta,Male,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9821883321,lokesh.21ci1a0015@gmail.com,+91 9466506531
+21CI1A0016,Nikhil Yadav,Male,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9836553950,nikhil.21ci1a0016@gmail.com,+91 9494042194
+21CI1A0017,Ananya Rao,Female,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9852570483,ananya.21ci1a0017@gmail.com,+91 9491927173
+21CI1A0018,Nandini Sharma,Female,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9827357152,nandini.21ci1a0018@gmail.com,+91 9442178667
+21CI1A0019,Ganesh Chowdary,Male,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9858316208,ganesh.21ci1a0019@gmail.com,+91 9441578742
+21CI1A0020,Varun Nair,Male,CIVIL,2021-2025,Regular,4,8,Graduated,+91 9828098602,varun.21ci1a0020@gmail.com,+91 9487690839
+22CS1A0001,Divya Rao,Female,CSE,2022-2026,Management,4,7,Active,+91 9840360354,divya.22cs1a0001@gmail.com,+91 9498701889
+22CS1A0002,Harini Sharma,Female,CSE,2022-2026,Lateral Entry,4,7,Active,+91 9832626787,harini.22cs1a0002@gmail.com,+91 9484181785
+22CS1A0003,Harini Nair,Female,CSE,2022-2026,Regular,4,7,Active,+91 9826170641,harini.22cs1a0003@gmail.com,+91 9459908249
+22CS1A0004,Pooja Mishra,Female,CSE,2022-2026,Lateral Entry,4,7,Active,+91 9897249621,pooja.22cs1a0004@gmail.com,+91 9444666430
+22CS1A0005,Akhil Mishra,Male,CSE,2022-2026,Regular,4,7,Active,+91 9846401685,akhil.22cs1a0005@gmail.com,+91 9484283733
+22CS1A0006,Meghana Kumar,Female,CSE,2022-2026,Regular,4,7,Active,+91 9835474511,meghana.22cs1a0006@gmail.com,+91 9470388703
+22CS1A0007,Tarun Verma,Male,CSE,2022-2026,Management,4,7,Active,+91 9858928598,tarun.22cs1a0007@gmail.com,+91 9467709142
+22CS1A0008,Meghana Patel,Female,CSE,2022-2026,Management,4,7,Active,+91 9841577823,meghana.22cs1a0008@gmail.com,+91 9493183435
+22CS1A0009,Jahnavi Nair,Female,CSE,2022-2026,Regular,4,7,Active,+91 9848619732,jahnavi.22cs1a0009@gmail.com,+91 9413155390
+22CS1A0010,Ramya Nair,Female,CSE,2022-2026,Lateral Entry,4,7,Active,+91 9895219597,ramya.22cs1a0010@gmail.com,+91 9437827783
+22CS1A0011,Meghana Chowdary,Female,CSE,2022-2026,Regular,4,7,Active,+91 9850909807,meghana.22cs1a0011@gmail.com,+91 9467132972
+22CS1A0012,Deepak Deshmukh,Male,CSE,2022-2026,Lateral Entry,4,7,Active,+91 9813056575,deepak.22cs1a0012@gmail.com,+91 9473926362
+22CS1A0013,Vikas Naidu,Male,CSE,2022-2026,Regular,4,7,Active,+91 9879973115,vikas.22cs1a0013@gmail.com,+91 9487501576
+22CS1A0014,Veda Mishra,Female,CSE,2022-2026,Regular,4,7,Active,+91 9893615226,veda.22cs1a0014@gmail.com,+91 9481132867
+22CS1A0015,Manoj Naidu,Male,CSE,2022-2026,Regular,4,7,Active,+91 9883896947,manoj.22cs1a0015@gmail.com,+91 9419522893
+22CS1A0016,Kavya Deshmukh,Female,CSE,2022-2026,Regular,4,7,Active,+91 9846051386,kavya.22cs1a0016@gmail.com,+91 9453113471
+22CS1A0017,Bhavya Chowdary,Female,CSE,2022-2026,Regular,4,7,Active,+91 9843306957,bhavya.22cs1a0017@gmail.com,+91 9495007309
+22CS1A0018,Yamini Deshmukh,Female,CSE,2022-2026,Regular,4,7,Active,+91 9845036047,yamini.22cs1a0018@gmail.com,+91 9431005304
+22CS1A0019,Ramya Reddy,Female,CSE,2022-2026,Regular,4,7,Active,+91 9860671070,ramya.22cs1a0019@gmail.com,+91 9431254026
+22CS1A0020,Nikhil Patel,Male,CSE,2022-2026,Regular,4,7,Active,+91 9826030104,nikhil.22cs1a0020@gmail.com,+91 9444923358
+22AI1A0001,Nikhil Sharma,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9895018377,nikhil.22ai1a0001@gmail.com,+91 9493241528
+22AI1A0002,Teja Mishra,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9877734560,teja.22ai1a0002@gmail.com,+91 9430664846
+22AI1A0003,Rahul Nair,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9833927984,rahul.22ai1a0003@gmail.com,+91 9459102326
+22AI1A0004,Yamini Kumar,Female,AIDS,2022-2026,Regular,4,7,Active,+91 9852899875,yamini.22ai1a0004@gmail.com,+91 9411474751
+22AI1A0005,Kavya Chowdary,Female,AIDS,2022-2026,Regular,4,7,Active,+91 9897095740,kavya.22ai1a0005@gmail.com,+91 9425170449
+22AI1A0006,Teja Reddy,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9811527194,teja.22ai1a0006@gmail.com,+91 9483088937
+22AI1A0007,Kavya Mishra,Female,AIDS,2022-2026,Regular,4,7,Active,+91 9890123455,kavya.22ai1a0007@gmail.com,+91 9418021263
+22AI1A0008,Ramya Gupta,Female,AIDS,2022-2026,Regular,4,7,Active,+91 9827180932,ramya.22ai1a0008@gmail.com,+91 9429987688
+22AI1A0009,Divya Joshi,Female,AIDS,2022-2026,Regular,4,7,Active,+91 9813797356,divya.22ai1a0009@gmail.com,+91 9437797055
+22AI1A0010,Tarun Gupta,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9843315987,tarun.22ai1a0010@gmail.com,+91 9467023145
+22AI1A0011,Pranay Verma,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9896817765,pranay.22ai1a0011@gmail.com,+91 9428423594
+22AI1A0012,Suresh Patel,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9881873047,suresh.22ai1a0012@gmail.com,+91 9434016883
+22AI1A0013,Pooja Deshmukh,Female,AIDS,2022-2026,Regular,4,7,Active,+91 9844923120,pooja.22ai1a0013@gmail.com,+91 9466399495
+22AI1A0014,Aarav Joshi,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9835115073,aarav.22ai1a0014@gmail.com,+91 9426552501
+22AI1A0015,Teja Gupta,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9813846414,teja.22ai1a0015@gmail.com,+91 9483224767
+22AI1A0016,Varun Goud,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9833504892,varun.22ai1a0016@gmail.com,+91 9453127307
+22AI1A0017,Ishaan Rao,Male,AIDS,2022-2026,Regular,4,7,Active,+91 9892967390,ishaan.22ai1a0017@gmail.com,+91 9439056769
+22AI1A0018,Ramya Rao,Female,AIDS,2022-2026,Lateral Entry,4,7,Active,+91 9898312605,ramya.22ai1a0018@gmail.com,+91 9450102583
+22AI1A0019,Meghana Joshi,Female,AIDS,2022-2026,Regular,4,7,Active,+91 9810064578,meghana.22ai1a0019@gmail.com,+91 9429229249
+22AI1A0020,Kavya Verma,Female,AIDS,2022-2026,Regular,4,7,Active,+91 9842135902,kavya.22ai1a0020@gmail.com,+91 9473220120
+22EC1A0001,Meghana Yadav,Female,ECE,2022-2026,Regular,4,7,Active,+91 9854924988,meghana.22ec1a0001@gmail.com,+91 9443094483
+22EC1A0002,Bhavya Iyer,Female,ECE,2022-2026,Regular,4,7,Active,+91 9852767806,bhavya.22ec1a0002@gmail.com,+91 9475964921
+22EC1A0003,Kavya Deshmukh,Female,ECE,2022-2026,Regular,4,7,Active,+91 9828973505,kavya.22ec1a0003@gmail.com,+91 9490521928
+22EC1A0004,Meghana Verma,Female,ECE,2022-2026,Regular,4,7,Active,+91 9872566658,meghana.22ec1a0004@gmail.com,+91 9431688305
+22EC1A0005,Aarav Kumar,Male,ECE,2022-2026,Regular,4,7,Active,+91 9836451303,aarav.22ec1a0005@gmail.com,+91 9428254129
+22EC1A0006,Manoj Patel,Male,ECE,2022-2026,Lateral Entry,4,7,Active,+91 9831227410,manoj.22ec1a0006@gmail.com,+91 9427212229
+22EC1A0007,Yashwanth Iyer,Male,ECE,2022-2026,Regular,4,7,Active,+91 9897617339,yashwanth.22ec1a0007@gmail.com,+91 9470689919
+22EC1A0008,Meghana Kumar,Female,ECE,2022-2026,Regular,4,7,Active,+91 9866189220,meghana.22ec1a0008@gmail.com,+91 9437220953
+22EC1A0009,Veda Gupta,Female,ECE,2022-2026,Management,4,7,Active,+91 9828281063,veda.22ec1a0009@gmail.com,+91 9448811799
+22EC1A0010,Varun Nair,Male,ECE,2022-2026,Lateral Entry,4,7,Active,+91 9849595770,varun.22ec1a0010@gmail.com,+91 9434898213
+22EC1A0011,Varun Patel,Male,ECE,2022-2026,Regular,4,7,Active,+91 9822571659,varun.22ec1a0011@gmail.com,+91 9447118809
+22EC1A0012,Vikas Iyer,Male,ECE,2022-2026,Regular,4,7,Active,+91 9891031503,vikas.22ec1a0012@gmail.com,+91 9479659305
+22EC1A0013,Meghana Chowdary,Female,ECE,2022-2026,Regular,4,7,Active,+91 9882336811,meghana.22ec1a0013@gmail.com,+91 9433470458
+22EC1A0014,Yashwanth Yadav,Male,ECE,2022-2026,Regular,4,7,Active,+91 9856558537,yashwanth.22ec1a0014@gmail.com,+91 9457403477
+22EC1A0015,Nandini Iyer,Female,ECE,2022-2026,Regular,4,7,Active,+91 9842781587,nandini.22ec1a0015@gmail.com,+91 9456490911
+22EC1A0016,Pranay Naidu,Male,ECE,2022-2026,Regular,4,7,Active,+91 9815969383,pranay.22ec1a0016@gmail.com,+91 9442722010
+22EC1A0017,Rahul Rao,Male,ECE,2022-2026,Regular,4,7,Active,+91 9872495203,rahul.22ec1a0017@gmail.com,+91 9494608589
+22EC1A0018,Manoj Deshmukh,Male,ECE,2022-2026,Regular,4,7,Active,+91 9889454135,manoj.22ec1a0018@gmail.com,+91 9430388754
+22EC1A0019,Lokesh Rao,Male,ECE,2022-2026,Regular,4,7,Active,+91 9813582544,lokesh.22ec1a0019@gmail.com,+91 9492461502
+22EC1A0020,Ramya Iyer,Female,ECE,2022-2026,Regular,4,7,Active,+91 9898237054,ramya.22ec1a0020@gmail.com,+91 9479864309
+22ME1A0001,Lokesh Nair,Male,MECH,2022-2026,Regular,4,7,Active,+91 9822551179,lokesh.22me1a0001@gmail.com,+91 9453786018
+22ME1A0002,Aditi Deshmukh,Female,MECH,2022-2026,Regular,4,7,Active,+91 9853415446,aditi.22me1a0002@gmail.com,+91 9427070878
+22ME1A0003,Sai Joshi,Male,MECH,2022-2026,Regular,4,7,Active,+91 9890693784,sai.22me1a0003@gmail.com,+91 9425992220
+22ME1A0004,Tarun Naidu,Male,MECH,2022-2026,Regular,4,7,Active,+91 9858106662,tarun.22me1a0004@gmail.com,+91 9436042809
+22ME1A0005,Nandini Nair,Female,MECH,2022-2026,Regular,4,7,Active,+91 9892319023,nandini.22me1a0005@gmail.com,+91 9414701608
+22ME1A0006,Suresh Gupta,Male,MECH,2022-2026,Regular,4,7,Active,+91 9814637707,suresh.22me1a0006@gmail.com,+91 9438541119
+22ME1A0007,Swetha Patel,Female,MECH,2022-2026,Lateral Entry,4,7,Active,+91 9876337596,swetha.22me1a0007@gmail.com,+91 9471736943
+22ME1A0008,Ganesh Reddy,Male,MECH,2022-2026,Lateral Entry,4,7,Active,+91 9863191943,ganesh.22me1a0008@gmail.com,+91 9478965202
+22ME1A0009,Aditi Rao,Female,MECH,2022-2026,Regular,4,7,Active,+91 9897360091,aditi.22me1a0009@gmail.com,+91 9475003002
+22ME1A0010,Ganesh Iyer,Male,MECH,2022-2026,Regular,4,7,Active,+91 9891514828,ganesh.22me1a0010@gmail.com,+91 9436395833
+22ME1A0011,Nikhil Deshmukh,Male,MECH,2022-2026,Regular,4,7,Active,+91 9839889233,nikhil.22me1a0011@gmail.com,+91 9480416626
+22ME1A0012,Veda Gupta,Female,MECH,2022-2026,Regular,4,7,Active,+91 9860964701,veda.22me1a0012@gmail.com,+91 9426264985
+22ME1A0013,Suresh Chowdary,Male,MECH,2022-2026,Regular,4,7,Active,+91 9827387609,suresh.22me1a0013@gmail.com,+91 9451026111
+22ME1A0014,Tarun Chowdary,Male,MECH,2022-2026,Lateral Entry,4,7,Active,+91 9833630815,tarun.22me1a0014@gmail.com,+91 9438067402
+22ME1A0015,Vikas Reddy,Male,MECH,2022-2026,Regular,4,7,Active,+91 9854771262,vikas.22me1a0015@gmail.com,+91 9463438419
+22ME1A0016,Ananya Mishra,Female,MECH,2022-2026,Regular,4,7,Active,+91 9818458856,ananya.22me1a0016@gmail.com,+91 9432097404
+22ME1A0017,Bhavya Sharma,Female,MECH,2022-2026,Regular,4,7,Active,+91 9861557748,bhavya.22me1a0017@gmail.com,+91 9415057517
+22ME1A0018,Meghana Goud,Female,MECH,2022-2026,Lateral Entry,4,7,Active,+91 9820530176,meghana.22me1a0018@gmail.com,+91 9425879384
+22ME1A0019,Harini Naidu,Female,MECH,2022-2026,Regular,4,7,Active,+91 9842756052,harini.22me1a0019@gmail.com,+91 9471348949
+22ME1A0020,Divya Goud,Female,MECH,2022-2026,Regular,4,7,Active,+91 9831245965,divya.22me1a0020@gmail.com,+91 9455420268
+22CI1A0001,Nikhil Mishra,Male,CIVIL,2022-2026,Regular,4,7,Active,+91 9884117192,nikhil.22ci1a0001@gmail.com,+91 9455315482
+22CI1A0002,Divya Patel,Female,CIVIL,2022-2026,Management,4,7,Active,+91 9829191923,divya.22ci1a0002@gmail.com,+91 9492447578
+22CI1A0003,Deepak Reddy,Male,CIVIL,2022-2026,Management,4,7,Active,+91 9839978421,deepak.22ci1a0003@gmail.com,+91 9446052242
+22CI1A0004,Suresh Deshmukh,Male,CIVIL,2022-2026,Management,4,7,Active,+91 9822841151,suresh.22ci1a0004@gmail.com,+91 9479935451
+22CI1A0005,Kavya Rao,Female,CIVIL,2022-2026,Regular,4,7,Active,+91 9836946626,kavya.22ci1a0005@gmail.com,+91 9469979346
+22CI1A0006,Meghana Kumar,Female,CIVIL,2022-2026,Regular,4,7,Active,+91 9823463813,meghana.22ci1a0006@gmail.com,+91 9480754399
+22CI1A0007,Pooja Kumar,Female,CIVIL,2022-2026,Regular,4,7,Active,+91 9893499778,pooja.22ci1a0007@gmail.com,+91 9451126192
+22CI1A0008,Akhil Mishra,Male,CIVIL,2022-2026,Regular,4,7,Active,+91 9878381080,akhil.22ci1a0008@gmail.com,+91 9442613039
+22CI1A0009,Sneha Rao,Female,CIVIL,2022-2026,Regular,4,7,Active,+91 9814737687,sneha.22ci1a0009@gmail.com,+91 9496069203
+22CI1A0010,Ramya Reddy,Female,CIVIL,2022-2026,Lateral Entry,4,7,Active,+91 9886988872,ramya.22ci1a0010@gmail.com,+91 9477440362
+22CI1A0011,Vinay Kumar,Male,CIVIL,2022-2026,Regular,4,7,Active,+91 9865056814,vinay.22ci1a0011@gmail.com,+91 9480238004
+22CI1A0012,Sneha Iyer,Female,CIVIL,2022-2026,Regular,4,7,Active,+91 9813110080,sneha.22ci1a0012@gmail.com,+91 9492742201
+22CI1A0013,Teja Patel,Male,CIVIL,2022-2026,Regular,4,7,Active,+91 9848311379,teja.22ci1a0013@gmail.com,+91 9424566058
+22CI1A0014,Nandini Yadav,Female,CIVIL,2022-2026,Regular,4,7,Active,+91 9853516925,nandini.22ci1a0014@gmail.com,+91 9456318671
+22CI1A0015,Nandini Gupta,Female,CIVIL,2022-2026,Lateral Entry,4,7,Active,+91 9831529622,nandini.22ci1a0015@gmail.com,+91 9471625215
+22CI1A0016,Chaitanya Chowdary,Male,CIVIL,2022-2026,Lateral Entry,4,7,Active,+91 9818663993,chaitanya.22ci1a0016@gmail.com,+91 9428059828
+22CI1A0017,Meghana Iyer,Female,CIVIL,2022-2026,Regular,4,7,Active,+91 9899948767,meghana.22ci1a0017@gmail.com,+91 9418235567
+22CI1A0018,Suresh Gupta,Male,CIVIL,2022-2026,Regular,4,7,Active,+91 9852078611,suresh.22ci1a0018@gmail.com,+91 9480850155
+22CI1A0019,Rahul Patel,Male,CIVIL,2022-2026,Regular,4,7,Active,+91 9838756373,rahul.22ci1a0019@gmail.com,+91 9422748591
+22CI1A0020,Sai Chowdary,Male,CIVIL,2022-2026,Regular,4,7,Active,+91 9857323852,sai.22ci1a0020@gmail.com,+91 9431688874
+23CS1A0001,Nandini Reddy,Female,CSE,2023-2027,Regular,3,5,Active,+91 9833883848,nandini.23cs1a0001@gmail.com,+91 9420793486
+23CS1A0002,Kavya Rao,Female,CSE,2023-2027,Regular,3,5,Active,+91 9867632788,kavya.23cs1a0002@gmail.com,+91 9429414666
+23CS1A0003,Tarun Yadav,Male,CSE,2023-2027,Regular,3,5,Active,+91 9856122552,tarun.23cs1a0003@gmail.com,+91 9470493343
+23CS1A0004,Meghana Yadav,Female,CSE,2023-2027,Regular,3,5,Active,+91 9885921583,meghana.23cs1a0004@gmail.com,+91 9461242608
+23CS1A0005,Vinay Iyer,Male,CSE,2023-2027,Regular,3,5,Active,+91 9870584422,vinay.23cs1a0005@gmail.com,+91 9457929353
+23CS1A0006,Chaitanya Joshi,Male,CSE,2023-2027,Regular,3,5,Active,+91 9858438245,chaitanya.23cs1a0006@gmail.com,+91 9497351934
+23CS1A0007,Meghana Joshi,Female,CSE,2023-2027,Regular,3,5,Active,+91 9882026669,meghana.23cs1a0007@gmail.com,+91 9487529965
+23CS1A0008,Sneha Yadav,Female,CSE,2023-2027,Regular,3,5,Active,+91 9841113727,sneha.23cs1a0008@gmail.com,+91 9477926691
+23CS1A0009,Sai Nair,Male,CSE,2023-2027,Management,3,5,Active,+91 9890750700,sai.23cs1a0009@gmail.com,+91 9458411201
+23CS1A0010,Ramya Mishra,Female,CSE,2023-2027,Regular,3,5,Active,+91 9857310020,ramya.23cs1a0010@gmail.com,+91 9432689042
+23CS1A0011,Nandini Joshi,Female,CSE,2023-2027,Regular,3,5,Active,+91 9854494635,nandini.23cs1a0011@gmail.com,+91 9448348372
+23CS1A0012,Divya Goud,Female,CSE,2023-2027,Regular,3,5,Active,+91 9876591830,divya.23cs1a0012@gmail.com,+91 9480105545
+23CS1A0013,Jahnavi Goud,Female,CSE,2023-2027,Regular,3,5,Active,+91 9861800793,jahnavi.23cs1a0013@gmail.com,+91 9481697063
+23CS1A0014,Vikas Chowdary,Male,CSE,2023-2027,Regular,3,5,Active,+91 9819972520,vikas.23cs1a0014@gmail.com,+91 9482620716
+23CS1A0015,Yashwanth Joshi,Male,CSE,2023-2027,Management,3,5,Active,+91 9845897443,yashwanth.23cs1a0015@gmail.com,+91 9433310178
+23CS1A0016,Kavya Joshi,Female,CSE,2023-2027,Regular,3,5,Active,+91 9860754765,kavya.23cs1a0016@gmail.com,+91 9488095946
+23CS1A0017,Jahnavi Joshi,Female,CSE,2023-2027,Regular,3,5,Active,+91 9865160212,jahnavi.23cs1a0017@gmail.com,+91 9434571572
+23CS1A0018,Ganesh Chowdary,Male,CSE,2023-2027,Regular,3,5,Active,+91 9838881856,ganesh.23cs1a0018@gmail.com,+91 9486372889
+23CS1A0019,Ananya Joshi,Female,CSE,2023-2027,Regular,3,5,Active,+91 9829000054,ananya.23cs1a0019@gmail.com,+91 9484609421
+23CS1A0020,Ganesh Yadav,Male,CSE,2023-2027,Regular,3,5,Active,+91 9863593162,ganesh.23cs1a0020@gmail.com,+91 9467902894
+23AI1A0001,Aarav Joshi,Male,AIDS,2023-2027,Regular,3,5,Active,+91 9813600094,aarav.23ai1a0001@gmail.com,+91 9467851607
+23AI1A0002,Varun Gupta,Male,AIDS,2023-2027,Regular,3,5,Active,+91 9850341825,varun.23ai1a0002@gmail.com,+91 9438507808
+23AI1A0003,Ananya Chowdary,Female,AIDS,2023-2027,Management,3,5,Active,+91 9884942396,ananya.23ai1a0003@gmail.com,+91 9465801304
+23AI1A0004,Vikas Kumar,Male,AIDS,2023-2027,Lateral Entry,3,5,Active,+91 9864219730,vikas.23ai1a0004@gmail.com,+91 9445571122
+23AI1A0005,Swetha Yadav,Female,AIDS,2023-2027,Regular,3,5,Active,+91 9870652001,swetha.23ai1a0005@gmail.com,+91 9483931921
+23AI1A0006,Ananya Verma,Female,AIDS,2023-2027,Regular,3,5,Active,+91 9815404319,ananya.23ai1a0006@gmail.com,+91 9495144138
+23AI1A0007,Pooja Rao,Female,AIDS,2023-2027,Management,3,5,Active,+91 9810994359,pooja.23ai1a0007@gmail.com,+91 9465940327
+23AI1A0008,Divya Nair,Female,AIDS,2023-2027,Regular,3,5,Active,+91 9833312540,divya.23ai1a0008@gmail.com,+91 9450737210
+23AI1A0009,Manoj Deshmukh,Male,AIDS,2023-2027,Regular,3,5,Active,+91 9888693256,manoj.23ai1a0009@gmail.com,+91 9481144327
+23AI1A0010,Varun Joshi,Male,AIDS,2023-2027,Lateral Entry,3,5,Active,+91 9822050010,varun.23ai1a0010@gmail.com,+91 9440068047
+23AI1A0011,Teja Joshi,Male,AIDS,2023-2027,Regular,3,5,Active,+91 9811396414,teja.23ai1a0011@gmail.com,+91 9495324516
+23AI1A0012,Ananya Kumar,Female,AIDS,2023-2027,Management,3,5,Active,+91 9810969631,ananya.23ai1a0012@gmail.com,+91 9472896291
+23AI1A0013,Lokesh Goud,Male,AIDS,2023-2027,Regular,3,5,Active,+91 9889339865,lokesh.23ai1a0013@gmail.com,+91 9430904551
+23AI1A0014,Chaitanya Patel,Male,AIDS,2023-2027,Regular,3,5,Active,+91 9836262900,chaitanya.23ai1a0014@gmail.com,+91 9449664260
+23AI1A0015,Bhavya Patel,Female,AIDS,2023-2027,Regular,3,5,Active,+91 9896429796,bhavya.23ai1a0015@gmail.com,+91 9427105383
+23AI1A0016,Varun Yadav,Male,AIDS,2023-2027,Regular,3,5,Active,+91 9853067059,varun.23ai1a0016@gmail.com,+91 9451008307
+23AI1A0017,Manoj Joshi,Male,AIDS,2023-2027,Regular,3,5,Active,+91 9881493034,manoj.23ai1a0017@gmail.com,+91 9420893491
+23AI1A0018,Veda Rao,Female,AIDS,2023-2027,Regular,3,5,Active,+91 9820822242,veda.23ai1a0018@gmail.com,+91 9474244213
+23AI1A0019,Nikhil Goud,Male,AIDS,2023-2027,Regular,3,5,Active,+91 9872775593,nikhil.23ai1a0019@gmail.com,+91 9425631543
+23AI1A0020,Manoj Verma,Male,AIDS,2023-2027,Lateral Entry,3,5,Active,+91 9896436653,manoj.23ai1a0020@gmail.com,+91 9461792638
+23EC1A0001,Harini Rao,Female,ECE,2023-2027,Regular,3,5,Active,+91 9859830720,harini.23ec1a0001@gmail.com,+91 9416616252
+23EC1A0002,Pooja Joshi,Female,ECE,2023-2027,Regular,3,5,Active,+91 9826437682,pooja.23ec1a0002@gmail.com,+91 9461644668
+23EC1A0003,Veda Joshi,Female,ECE,2023-2027,Regular,3,5,Active,+91 9827207325,veda.23ec1a0003@gmail.com,+91 9495104452
+23EC1A0004,Nandini Yadav,Female,ECE,2023-2027,Regular,3,5,Active,+91 9829183692,nandini.23ec1a0004@gmail.com,+91 9420555723
+23EC1A0005,Akhil Nair,Male,ECE,2023-2027,Regular,3,5,Active,+91 9852769090,akhil.23ec1a0005@gmail.com,+91 9480520275
+23EC1A0006,Nikhil Reddy,Male,ECE,2023-2027,Regular,3,5,Active,+91 9850617796,nikhil.23ec1a0006@gmail.com,+91 9479782536
+23EC1A0007,Aditi Chowdary,Female,ECE,2023-2027,Regular,3,5,Active,+91 9866214192,aditi.23ec1a0007@gmail.com,+91 9459040929
+23EC1A0008,Jahnavi Yadav,Female,ECE,2023-2027,Regular,3,5,Active,+91 9839171659,jahnavi.23ec1a0008@gmail.com,+91 9413071672
+23EC1A0009,Varun Chowdary,Male,ECE,2023-2027,Regular,3,5,Active,+91 9844862081,varun.23ec1a0009@gmail.com,+91 9442241718
+23EC1A0010,Teja Yadav,Male,ECE,2023-2027,Management,3,5,Active,+91 9892365854,teja.23ec1a0010@gmail.com,+91 9451388967
+23EC1A0011,Vikas Mishra,Male,ECE,2023-2027,Regular,3,5,Active,+91 9882323685,vikas.23ec1a0011@gmail.com,+91 9455476403
+23EC1A0012,Rahul Kumar,Male,ECE,2023-2027,Lateral Entry,3,5,Active,+91 9810324610,rahul.23ec1a0012@gmail.com,+91 9433299496
+23EC1A0013,Ramya Nair,Female,ECE,2023-2027,Regular,3,5,Active,+91 9853915812,ramya.23ec1a0013@gmail.com,+91 9483449328
+23EC1A0014,Pranay Deshmukh,Male,ECE,2023-2027,Lateral Entry,3,5,Active,+91 9893001243,pranay.23ec1a0014@gmail.com,+91 9414482814
+23EC1A0015,Akhil Iyer,Male,ECE,2023-2027,Regular,3,5,Active,+91 9897702945,akhil.23ec1a0015@gmail.com,+91 9463211314
+23EC1A0016,Nikhil Gupta,Male,ECE,2023-2027,Regular,3,5,Active,+91 9890955623,nikhil.23ec1a0016@gmail.com,+91 9455035449
+23EC1A0017,Swetha Reddy,Female,ECE,2023-2027,Regular,3,5,Active,+91 9869438034,swetha.23ec1a0017@gmail.com,+91 9439061153
+23EC1A0018,Veda Nair,Female,ECE,2023-2027,Regular,3,5,Active,+91 9828001976,veda.23ec1a0018@gmail.com,+91 9490510954
+23EC1A0019,Yashwanth Mishra,Male,ECE,2023-2027,Regular,3,5,Active,+91 9836362304,yashwanth.23ec1a0019@gmail.com,+91 9469513051
+23EC1A0020,Vinay Iyer,Male,ECE,2023-2027,Regular,3,5,Active,+91 9891005999,vinay.23ec1a0020@gmail.com,+91 9464782353
+23ME1A0001,Lokesh Chowdary,Male,MECH,2023-2027,Regular,3,5,Active,+91 9892333146,lokesh.23me1a0001@gmail.com,+91 9411548619
+23ME1A0002,Pranay Iyer,Male,MECH,2023-2027,Lateral Entry,3,5,Active,+91 9870198276,pranay.23me1a0002@gmail.com,+91 9452008316
+23ME1A0003,Vinay Kumar,Male,MECH,2023-2027,Regular,3,5,Active,+91 9880421651,vinay.23me1a0003@gmail.com,+91 9435354466
+23ME1A0004,Meghana Patel,Female,MECH,2023-2027,Regular,3,5,Active,+91 9875545210,meghana.23me1a0004@gmail.com,+91 9423733931
+23ME1A0005,Aarav Nair,Male,MECH,2023-2027,Regular,3,5,Active,+91 9865097454,aarav.23me1a0005@gmail.com,+91 9441323056
+23ME1A0006,Divya Iyer,Female,MECH,2023-2027,Management,3,5,Active,+91 9810558739,divya.23me1a0006@gmail.com,+91 9411561157
+23ME1A0007,Harini Yadav,Female,MECH,2023-2027,Management,3,5,Active,+91 9842297484,harini.23me1a0007@gmail.com,+91 9494633185
+23ME1A0008,Pranay Chowdary,Male,MECH,2023-2027,Regular,3,5,Active,+91 9860131500,pranay.23me1a0008@gmail.com,+91 9436059637
+23ME1A0009,Vikas Yadav,Male,MECH,2023-2027,Regular,3,5,Active,+91 9882744565,vikas.23me1a0009@gmail.com,+91 9494704305
+23ME1A0010,Harini Deshmukh,Female,MECH,2023-2027,Regular,3,5,Active,+91 9812835037,harini.23me1a0010@gmail.com,+91 9453372027
+23ME1A0011,Yamini Verma,Female,MECH,2023-2027,Lateral Entry,3,5,Active,+91 9832608545,yamini.23me1a0011@gmail.com,+91 9422581703
+23ME1A0012,Nandini Nair,Female,MECH,2023-2027,Regular,3,5,Active,+91 9899002797,nandini.23me1a0012@gmail.com,+91 9445070737
+23ME1A0013,Yamini Chowdary,Female,MECH,2023-2027,Lateral Entry,3,5,Active,+91 9876083371,yamini.23me1a0013@gmail.com,+91 9483827356
+23ME1A0014,Pranay Joshi,Male,MECH,2023-2027,Lateral Entry,3,5,Active,+91 9870410396,pranay.23me1a0014@gmail.com,+91 9445320440
+23ME1A0015,Vinay Verma,Male,MECH,2023-2027,Regular,3,5,Active,+91 9812035260,vinay.23me1a0015@gmail.com,+91 9490995254
+23ME1A0016,Vikas Mishra,Male,MECH,2023-2027,Regular,3,5,Active,+91 9830727069,vikas.23me1a0016@gmail.com,+91 9418825820
+23ME1A0017,Suresh Iyer,Male,MECH,2023-2027,Management,3,5,Active,+91 9857763539,suresh.23me1a0017@gmail.com,+91 9467319277
+23ME1A0018,Kavya Naidu,Female,MECH,2023-2027,Regular,3,5,Active,+91 9858882919,kavya.23me1a0018@gmail.com,+91 9455067496
+23ME1A0019,Manoj Nair,Male,MECH,2023-2027,Regular,3,5,Active,+91 9866062920,manoj.23me1a0019@gmail.com,+91 9456078387
+23ME1A0020,Vikas Deshmukh,Male,MECH,2023-2027,Regular,3,5,Active,+91 9859934610,vikas.23me1a0020@gmail.com,+91 9490744148
+23CI1A0001,Harini Yadav,Female,CIVIL,2023-2027,Management,3,5,Active,+91 9810385097,harini.23ci1a0001@gmail.com,+91 9412045953
+23CI1A0002,Ganesh Gupta,Male,CIVIL,2023-2027,Lateral Entry,3,5,Active,+91 9839315053,ganesh.23ci1a0002@gmail.com,+91 9410335630
+23CI1A0003,Varun Kumar,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9870000144,varun.23ci1a0003@gmail.com,+91 9472765304
+23CI1A0004,Veda Reddy,Female,CIVIL,2023-2027,Regular,3,5,Active,+91 9885354109,veda.23ci1a0004@gmail.com,+91 9410574926
+23CI1A0005,Tarun Verma,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9887025540,tarun.23ci1a0005@gmail.com,+91 9474099149
+23CI1A0006,Nikhil Gupta,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9830202510,nikhil.23ci1a0006@gmail.com,+91 9419912730
+23CI1A0007,Swetha Rao,Female,CIVIL,2023-2027,Lateral Entry,3,5,Active,+91 9824028369,swetha.23ci1a0007@gmail.com,+91 9420044778
+23CI1A0008,Suresh Gupta,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9846673573,suresh.23ci1a0008@gmail.com,+91 9416809863
+23CI1A0009,Vinay Sharma,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9826352357,vinay.23ci1a0009@gmail.com,+91 9480238025
+23CI1A0010,Meghana Joshi,Female,CIVIL,2023-2027,Management,3,5,Active,+91 9850721904,meghana.23ci1a0010@gmail.com,+91 9420157968
+23CI1A0011,Chaitanya Nair,Male,CIVIL,2023-2027,Management,3,5,Active,+91 9852078457,chaitanya.23ci1a0011@gmail.com,+91 9472235184
+23CI1A0012,Deepak Iyer,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9826271315,deepak.23ci1a0012@gmail.com,+91 9496649529
+23CI1A0013,Pooja Reddy,Female,CIVIL,2023-2027,Regular,3,5,Active,+91 9879489523,pooja.23ci1a0013@gmail.com,+91 9487832186
+23CI1A0014,Ananya Joshi,Female,CIVIL,2023-2027,Regular,3,5,Active,+91 9829513188,ananya.23ci1a0014@gmail.com,+91 9474888392
+23CI1A0015,Teja Verma,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9848051624,teja.23ci1a0015@gmail.com,+91 9423597480
+23CI1A0016,Tarun Patel,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9847606892,tarun.23ci1a0016@gmail.com,+91 9445548785
+23CI1A0017,Chaitanya Deshmukh,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9868005756,chaitanya.23ci1a0017@gmail.com,+91 9429846699
+23CI1A0018,Meghana Yadav,Female,CIVIL,2023-2027,Lateral Entry,3,5,Active,+91 9890463039,meghana.23ci1a0018@gmail.com,+91 9427801252
+23CI1A0019,Harini Naidu,Female,CIVIL,2023-2027,Regular,3,5,Active,+91 9831770673,harini.23ci1a0019@gmail.com,+91 9483163209
+23CI1A0020,Nikhil Iyer,Male,CIVIL,2023-2027,Regular,3,5,Active,+91 9826034298,nikhil.23ci1a0020@gmail.com,+91 9483457524
+24CS1A0001,Aarav Iyer,Male,CSE,2024-2028,Lateral Entry,2,3,Active,+91 9811919344,aarav.24cs1a0001@gmail.com,+91 9439455426
+24CS1A0002,Ishaan Rao,Male,CSE,2024-2028,Regular,2,3,Active,+91 9887279272,ishaan.24cs1a0002@gmail.com,+91 9475172187
+24CS1A0003,Sai Joshi,Male,CSE,2024-2028,Regular,2,3,Active,+91 9831427767,sai.24cs1a0003@gmail.com,+91 9478246769
+24CS1A0004,Teja Chowdary,Male,CSE,2024-2028,Regular,2,3,Active,+91 9879291228,teja.24cs1a0004@gmail.com,+91 9471739262
+24CS1A0005,Pooja Goud,Female,CSE,2024-2028,Management,2,3,Active,+91 9828368678,pooja.24cs1a0005@gmail.com,+91 9475475740
+24CS1A0006,Vikas Kumar,Male,CSE,2024-2028,Regular,2,3,Active,+91 9890301053,vikas.24cs1a0006@gmail.com,+91 9463973257
+24CS1A0007,Sai Joshi,Male,CSE,2024-2028,Management,2,3,Active,+91 9852830094,sai.24cs1a0007@gmail.com,+91 9493393252
+24CS1A0008,Pranay Reddy,Male,CSE,2024-2028,Management,2,3,Active,+91 9866133725,pranay.24cs1a0008@gmail.com,+91 9428933400
+24CS1A0009,Swetha Chowdary,Female,CSE,2024-2028,Regular,2,3,Active,+91 9850761047,swetha.24cs1a0009@gmail.com,+91 9469177515
+24CS1A0010,Ananya Yadav,Female,CSE,2024-2028,Lateral Entry,2,3,Active,+91 9823833669,ananya.24cs1a0010@gmail.com,+91 9420947481
+24CS1A0011,Pranay Naidu,Male,CSE,2024-2028,Regular,2,3,Active,+91 9875288848,pranay.24cs1a0011@gmail.com,+91 9411657890
+24CS1A0012,Sai Naidu,Male,CSE,2024-2028,Regular,2,3,Active,+91 9837388237,sai.24cs1a0012@gmail.com,+91 9429549825
+24CS1A0013,Nikhil Verma,Male,CSE,2024-2028,Regular,2,3,Active,+91 9859189153,nikhil.24cs1a0013@gmail.com,+91 9461440302
+24CS1A0014,Akhil Joshi,Male,CSE,2024-2028,Regular,2,3,Active,+91 9849114046,akhil.24cs1a0014@gmail.com,+91 9425664104
+24CS1A0015,Akhil Mishra,Male,CSE,2024-2028,Regular,2,3,Active,+91 9834839896,akhil.24cs1a0015@gmail.com,+91 9470477006
+24CS1A0016,Chaitanya Joshi,Male,CSE,2024-2028,Regular,2,3,Active,+91 9843445620,chaitanya.24cs1a0016@gmail.com,+91 9492862436
+24CS1A0017,Tarun Patel,Male,CSE,2024-2028,Regular,2,3,Active,+91 9825442765,tarun.24cs1a0017@gmail.com,+91 9488851802
+24CS1A0018,Sneha Chowdary,Female,CSE,2024-2028,Lateral Entry,2,3,Active,+91 9885727387,sneha.24cs1a0018@gmail.com,+91 9464729892
+24CS1A0019,Nikhil Yadav,Male,CSE,2024-2028,Management,2,3,Active,+91 9810255603,nikhil.24cs1a0019@gmail.com,+91 9479917896
+24CS1A0020,Pranay Gupta,Male,CSE,2024-2028,Lateral Entry,2,3,Active,+91 9843207429,pranay.24cs1a0020@gmail.com,+91 9425502947
+24AI1A0001,Veda Rao,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9829255715,veda.24ai1a0001@gmail.com,+91 9499730662
+24AI1A0002,Manoj Deshmukh,Male,AIDS,2024-2028,Management,2,3,Active,+91 9864094942,manoj.24ai1a0002@gmail.com,+91 9447138622
+24AI1A0003,Sneha Rao,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9824272281,sneha.24ai1a0003@gmail.com,+91 9429993929
+24AI1A0004,Aarav Chowdary,Male,AIDS,2024-2028,Regular,2,3,Active,+91 9828711633,aarav.24ai1a0004@gmail.com,+91 9435152275
+24AI1A0005,Veda Mishra,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9843208108,veda.24ai1a0005@gmail.com,+91 9426407554
+24AI1A0006,Nikhil Deshmukh,Male,AIDS,2024-2028,Lateral Entry,2,3,Active,+91 9876044244,nikhil.24ai1a0006@gmail.com,+91 9463355838
+24AI1A0007,Sneha Kumar,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9882582345,sneha.24ai1a0007@gmail.com,+91 9459467713
+24AI1A0008,Vikas Reddy,Male,AIDS,2024-2028,Regular,2,3,Active,+91 9851426841,vikas.24ai1a0008@gmail.com,+91 9435308165
+24AI1A0009,Rahul Naidu,Male,AIDS,2024-2028,Regular,2,3,Active,+91 9810389978,rahul.24ai1a0009@gmail.com,+91 9460233756
+24AI1A0010,Veda Joshi,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9892944686,veda.24ai1a0010@gmail.com,+91 9469467603
+24AI1A0011,Divya Verma,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9884478380,divya.24ai1a0011@gmail.com,+91 9440690120
+24AI1A0012,Akhil Joshi,Male,AIDS,2024-2028,Management,2,3,Active,+91 9878004641,akhil.24ai1a0012@gmail.com,+91 9477782249
+24AI1A0013,Divya Kumar,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9852744929,divya.24ai1a0013@gmail.com,+91 9474870445
+24AI1A0014,Ganesh Deshmukh,Male,AIDS,2024-2028,Regular,2,3,Active,+91 9829349378,ganesh.24ai1a0014@gmail.com,+91 9423217595
+24AI1A0015,Tarun Verma,Male,AIDS,2024-2028,Lateral Entry,2,3,Active,+91 9881894811,tarun.24ai1a0015@gmail.com,+91 9473302946
+24AI1A0016,Deepak Yadav,Male,AIDS,2024-2028,Regular,2,3,Active,+91 9832542902,deepak.24ai1a0016@gmail.com,+91 9434810106
+24AI1A0017,Nandini Sharma,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9818052634,nandini.24ai1a0017@gmail.com,+91 9448044231
+24AI1A0018,Lokesh Iyer,Male,AIDS,2024-2028,Regular,2,3,Active,+91 9856572774,lokesh.24ai1a0018@gmail.com,+91 9465870686
+24AI1A0019,Meghana Mishra,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9883119480,meghana.24ai1a0019@gmail.com,+91 9440067697
+24AI1A0020,Sneha Mishra,Female,AIDS,2024-2028,Regular,2,3,Active,+91 9895902828,sneha.24ai1a0020@gmail.com,+91 9495281966
+24EC1A0001,Nandini Goud,Female,ECE,2024-2028,Management,2,3,Active,+91 9850376665,nandini.24ec1a0001@gmail.com,+91 9445778415
+24EC1A0002,Veda Rao,Female,ECE,2024-2028,Regular,2,3,Active,+91 9833909342,veda.24ec1a0002@gmail.com,+91 9472454928
+24EC1A0003,Aditi Sharma,Female,ECE,2024-2028,Regular,2,3,Active,+91 9895541281,aditi.24ec1a0003@gmail.com,+91 9484886448
+24EC1A0004,Meghana Verma,Female,ECE,2024-2028,Regular,2,3,Active,+91 9899647467,meghana.24ec1a0004@gmail.com,+91 9470738321
+24EC1A0005,Lokesh Rao,Male,ECE,2024-2028,Lateral Entry,2,3,Active,+91 9856407919,lokesh.24ec1a0005@gmail.com,+91 9452585978
+24EC1A0006,Lokesh Goud,Male,ECE,2024-2028,Lateral Entry,2,3,Active,+91 9834325589,lokesh.24ec1a0006@gmail.com,+91 9469037831
+24EC1A0007,Manoj Gupta,Male,ECE,2024-2028,Regular,2,3,Active,+91 9858724018,manoj.24ec1a0007@gmail.com,+91 9475637388
+24EC1A0008,Aarav Chowdary,Male,ECE,2024-2028,Lateral Entry,2,3,Active,+91 9820944590,aarav.24ec1a0008@gmail.com,+91 9416193723
+24EC1A0009,Harini Verma,Female,ECE,2024-2028,Regular,2,3,Active,+91 9858464112,harini.24ec1a0009@gmail.com,+91 9426855069
+24EC1A0010,Jahnavi Kumar,Female,ECE,2024-2028,Regular,2,3,Active,+91 9828118248,jahnavi.24ec1a0010@gmail.com,+91 9430763064
+24EC1A0011,Aditi Verma,Female,ECE,2024-2028,Regular,2,3,Active,+91 9869575713,aditi.24ec1a0011@gmail.com,+91 9494045351
+24EC1A0012,Meghana Gupta,Female,ECE,2024-2028,Regular,2,3,Active,+91 9878393146,meghana.24ec1a0012@gmail.com,+91 9452491126
+24EC1A0013,Nikhil Sharma,Male,ECE,2024-2028,Regular,2,3,Active,+91 9842632798,nikhil.24ec1a0013@gmail.com,+91 9425513037
+24EC1A0014,Tarun Kumar,Male,ECE,2024-2028,Regular,2,3,Active,+91 9817858537,tarun.24ec1a0014@gmail.com,+91 9445595453
+24EC1A0015,Vikas Iyer,Male,ECE,2024-2028,Regular,2,3,Active,+91 9857990015,vikas.24ec1a0015@gmail.com,+91 9434146793
+24EC1A0016,Yamini Kumar,Female,ECE,2024-2028,Regular,2,3,Active,+91 9877091892,yamini.24ec1a0016@gmail.com,+91 9481104739
+24EC1A0017,Manoj Sharma,Male,ECE,2024-2028,Regular,2,3,Active,+91 9897495472,manoj.24ec1a0017@gmail.com,+91 9463967902
+24EC1A0018,Yashwanth Joshi,Male,ECE,2024-2028,Regular,2,3,Active,+91 9854172549,yashwanth.24ec1a0018@gmail.com,+91 9424259098
+24EC1A0019,Aditi Sharma,Female,ECE,2024-2028,Management,2,3,Active,+91 9865274981,aditi.24ec1a0019@gmail.com,+91 9419130326
+24EC1A0020,Swetha Nair,Female,ECE,2024-2028,Regular,2,3,Active,+91 9815285764,swetha.24ec1a0020@gmail.com,+91 9447208997
+24ME1A0001,Vinay Iyer,Male,MECH,2024-2028,Regular,2,3,Active,+91 9874209410,vinay.24me1a0001@gmail.com,+91 9462225851
+24ME1A0002,Chaitanya Gupta,Male,MECH,2024-2028,Regular,2,3,Active,+91 9832219874,chaitanya.24me1a0002@gmail.com,+91 9478742855
+24ME1A0003,Bhavya Verma,Female,MECH,2024-2028,Regular,2,3,Active,+91 9851451074,bhavya.24me1a0003@gmail.com,+91 9476399880
+24ME1A0004,Rahul Deshmukh,Male,MECH,2024-2028,Management,2,3,Active,+91 9898115672,rahul.24me1a0004@gmail.com,+91 9422149759
+24ME1A0005,Yashwanth Joshi,Male,MECH,2024-2028,Regular,2,3,Active,+91 9848573287,yashwanth.24me1a0005@gmail.com,+91 9463798150
+24ME1A0006,Teja Kumar,Male,MECH,2024-2028,Regular,2,3,Active,+91 9810440057,teja.24me1a0006@gmail.com,+91 9419090745
+24ME1A0007,Divya Goud,Female,MECH,2024-2028,Regular,2,3,Active,+91 9870565864,divya.24me1a0007@gmail.com,+91 9449641570
+24ME1A0008,Manoj Nair,Male,MECH,2024-2028,Regular,2,3,Active,+91 9833940953,manoj.24me1a0008@gmail.com,+91 9487707062
+24ME1A0009,Veda Deshmukh,Female,MECH,2024-2028,Regular,2,3,Active,+91 9833539801,veda.24me1a0009@gmail.com,+91 9473287057
+24ME1A0010,Deepak Gupta,Male,MECH,2024-2028,Regular,2,3,Active,+91 9836575037,deepak.24me1a0010@gmail.com,+91 9495691314
+24ME1A0011,Nikhil Mishra,Male,MECH,2024-2028,Management,2,3,Active,+91 9827072032,nikhil.24me1a0011@gmail.com,+91 9450814545
+24ME1A0012,Vikas Rao,Male,MECH,2024-2028,Regular,2,3,Active,+91 9857826132,vikas.24me1a0012@gmail.com,+91 9450635251
+24ME1A0013,Chaitanya Rao,Male,MECH,2024-2028,Regular,2,3,Active,+91 9842144061,chaitanya.24me1a0013@gmail.com,+91 9414124931
+24ME1A0014,Sneha Verma,Female,MECH,2024-2028,Regular,2,3,Active,+91 9884141916,sneha.24me1a0014@gmail.com,+91 9497476727
+24ME1A0015,Ramya Kumar,Female,MECH,2024-2028,Regular,2,3,Active,+91 9853998552,ramya.24me1a0015@gmail.com,+91 9457475536
+24ME1A0016,Teja Sharma,Male,MECH,2024-2028,Management,2,3,Active,+91 9866352195,teja.24me1a0016@gmail.com,+91 9428079816
+24ME1A0017,Pooja Mishra,Female,MECH,2024-2028,Regular,2,3,Active,+91 9877893356,pooja.24me1a0017@gmail.com,+91 9481139260
+24ME1A0018,Yamini Goud,Female,MECH,2024-2028,Regular,2,3,Active,+91 9850796527,yamini.24me1a0018@gmail.com,+91 9496642273
+24ME1A0019,Vikas Naidu,Male,MECH,2024-2028,Lateral Entry,2,3,Active,+91 9866017878,vikas.24me1a0019@gmail.com,+91 9433539186
+24ME1A0020,Sai Mishra,Male,MECH,2024-2028,Regular,2,3,Active,+91 9834501547,sai.24me1a0020@gmail.com,+91 9425567408
+24CI1A0001,Nandini Naidu,Female,CIVIL,2024-2028,Lateral Entry,2,3,Active,+91 9880785227,nandini.24ci1a0001@gmail.com,+91 9450649879
+24CI1A0002,Aditi Chowdary,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9858039234,aditi.24ci1a0002@gmail.com,+91 9491112039
+24CI1A0003,Nandini Joshi,Female,CIVIL,2024-2028,Management,2,3,Active,+91 9899937338,nandini.24ci1a0003@gmail.com,+91 9451144195
+24CI1A0004,Sai Reddy,Male,CIVIL,2024-2028,Regular,2,3,Active,+91 9839383898,sai.24ci1a0004@gmail.com,+91 9410996379
+24CI1A0005,Harini Deshmukh,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9855209956,harini.24ci1a0005@gmail.com,+91 9435303913
+24CI1A0006,Aditi Rao,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9847946440,aditi.24ci1a0006@gmail.com,+91 9479511857
+24CI1A0007,Lokesh Deshmukh,Male,CIVIL,2024-2028,Regular,2,3,Active,+91 9838124408,lokesh.24ci1a0007@gmail.com,+91 9461387484
+24CI1A0008,Ramya Patel,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9825424870,ramya.24ci1a0008@gmail.com,+91 9418017866
+24CI1A0009,Rahul Rao,Male,CIVIL,2024-2028,Lateral Entry,2,3,Active,+91 9843805969,rahul.24ci1a0009@gmail.com,+91 9453484838
+24CI1A0010,Harini Patel,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9823253621,harini.24ci1a0010@gmail.com,+91 9428798095
+24CI1A0011,Ananya Rao,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9837268172,ananya.24ci1a0011@gmail.com,+91 9440064867
+24CI1A0012,Teja Yadav,Male,CIVIL,2024-2028,Regular,2,3,Active,+91 9860574293,teja.24ci1a0012@gmail.com,+91 9412566892
+24CI1A0013,Tarun Chowdary,Male,CIVIL,2024-2028,Regular,2,3,Active,+91 9877320630,tarun.24ci1a0013@gmail.com,+91 9442833273
+24CI1A0014,Yamini Kumar,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9879501308,yamini.24ci1a0014@gmail.com,+91 9425021855
+24CI1A0015,Divya Joshi,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9845002115,divya.24ci1a0015@gmail.com,+91 9499449300
+24CI1A0016,Vinay Joshi,Male,CIVIL,2024-2028,Regular,2,3,Active,+91 9887563804,vinay.24ci1a0016@gmail.com,+91 9478755321
+24CI1A0017,Swetha Sharma,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9839012994,swetha.24ci1a0017@gmail.com,+91 9435805346
+24CI1A0018,Pooja Goud,Female,CIVIL,2024-2028,Regular,2,3,Active,+91 9823824473,pooja.24ci1a0018@gmail.com,+91 9420565715
+24CI1A0019,Nikhil Joshi,Male,CIVIL,2024-2028,Regular,2,3,Active,+91 9867205323,nikhil.24ci1a0019@gmail.com,+91 9436035209
+24CI1A0020,Aarav Yadav,Male,CIVIL,2024-2028,Regular,2,3,Active,+91 9894436762,aarav.24ci1a0020@gmail.com,+91 9426793499
