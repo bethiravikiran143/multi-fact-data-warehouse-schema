@@ -5,10 +5,6 @@ Streamlit Academic Analytics Dashboard
 Working Prototype for Student-Performance Data Warehouse Across Departments
 Using A Multi-Fact Data-Warehouse Schema.
 
-Domain: Big Data Analytics, Data Warehousing & Visualization
-Prototype: Multi-Fact Academic Performance Data Warehouse
-"""
-
 import os
 import sys
 import sqlite3
@@ -90,11 +86,11 @@ st.markdown('<div class="sub-header">Design and Development of a Working Prototy
 
 meta_col1, meta_col2, meta_col3, meta_col4 = st.columns(4)
 with meta_col1:
-    st.markdown('<div class="meta-badge">👤 <b>Role:</b> Academic Analytics</div>', unsafe_allow_html=True)
+    st.markdown('<div class="meta-badge">👤 <b>Student:</b> BETHI RAVI KIRAN</div>', unsafe_allow_html=True)
 with meta_col2:
-    st.markdown('<div class="meta-badge">🏛️ <b>Scope:</b> Multi-Department Prototype</div>', unsafe_allow_html=True)
+    st.markdown('<div class="meta-badge">🆔 <b>Roll No:</b> 24ME5A5402 (Sec A)</div>', unsafe_allow_html=True)
 with meta_col3:
-    st.markdown('<div class="meta-badge">📊 <b>Schema:</b> Multi-Fact Constellation</div>', unsafe_allow_html=True)
+    st.markdown('<div class="meta-badge">👨‍🏫 <b>Guide:</b> Mr. K. Rajendra</div>', unsafe_allow_html=True)
 with meta_col4:
     st.markdown('<div class="meta-badge">🏛️ <b>Domain:</b> Big Data Analytics & DW</div>', unsafe_allow_html=True)
 
@@ -112,6 +108,16 @@ selected_dept = st.sidebar.selectbox("Filter Department:", departments)
 cohorts = ["ALL", "2021-2025", "2022-2026", "2023-2027", "2024-2028"]
 selected_cohort = st.sidebar.selectbox("Filter Cohort Batch:", cohorts)
 
+st.sidebar.markdown("---")
+st.sidebar.subheader("Warehouse Architecture")
+st.sidebar.info("""
+**Multi-Fact Galaxy Schema:**
+- **Fact 1:** Fact_Exam_Performance
+- **Fact 2:** Fact_Attendance_Engagement
+- **Fact 3:** Fact_Semester_Summary
+- **Conformed Dims:** Dim_Student, Dim_Course, Dim_Department, Dim_Time_Semester, Dim_Faculty
+""")
+
 # Re-run ETL button if needed
 if st.sidebar.button("🔄 Reload / Re-sync Warehouse"):
     with st.spinner("Executing ETL Pipeline..."):
@@ -122,13 +128,13 @@ if st.sidebar.button("🔄 Reload / Re-sync Warehouse"):
 # ----------------------------------------------------
 # Main Tabs Navigation
 # ----------------------------------------------------
-tab1, tab_hod, tab_admin, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "📊 Institutional Overview",
-    "🚨 HOD Attendance Warm Alerts",
-    "⚙️ Student Administration (Join/Modify)",
     "🔍 Cohort & Course Drill-Down",
     "📈 Multi-Fact Cross Analysis",
-    "⚠️ Risk Early Warning (ML)"
+    "⚠️ Risk Early Warning (ML)",
+    "👤 Student 360° Profile",
+    "🏛️ Schema Architecture"
 ])
 
 # ----------------------------------------------------
@@ -202,361 +208,6 @@ with tab1:
         use_container_width=True,
         hide_index=True
     )
-
-# ----------------------------------------------------
-# TAB: HOD Attendance Warm Alerts & Notices
-# ----------------------------------------------------
-with tab_hod:
-    st.subheader("🚨 Head of Department (HOD) Portal: Attendance Warm Alert & Detention System")
-    st.caption("Actionable monitoring module for Department Heads to track low-attendance students and issue formal Condonation & Detention notices.")
-
-    col_h1, col_h2 = st.columns([1, 2])
-    with col_h1:
-        hod_dept_select = st.selectbox("Select Department / HOD:", ["MECH", "CSE", "AIDS", "ECE", "CIVIL"], index=0)
-    
-    dept_info = aq.get_hod_department_info(hod_dept_select)
-    hod_name = dept_info["hod_name"] if dept_info else "HOD"
-    dept_full_name = dept_info["dept_name"] if dept_info else hod_dept_select
-    total_enrolled = dept_info["total_enrolled_students"] if dept_info else 0
-
-    with col_h2:
-        st.info(f"🏛️ **Department:** {dept_full_name} | 👨‍🏫 **Head of Department (HOD):** {hod_name} | 👥 **Enrolled Students:** {total_enrolled}")
-
-    # Fetch alerts for this department
-    alerts_all = aq.get_hod_attendance_alerts(dept_code=hod_dept_select)
-    
-    # Summary Metrics
-    critical_count = len(alerts_all[alerts_all["attendance_pct"] < 65.0]) if not alerts_all.empty else 0
-    condonation_count = len(alerts_all[(alerts_all["attendance_pct"] >= 65.0) & (alerts_all["attendance_pct"] < 75.0)]) if not alerts_all.empty else 0
-    total_alerts_count = len(alerts_all) if not alerts_all.empty else 0
-
-    c_a1, c_a2, c_a3, c_a4 = st.columns(4)
-    with c_a1:
-        st.metric("Total Department Students", total_enrolled)
-    with c_a2:
-        st.metric("Low Attendance Instances (<75%)", total_alerts_count)
-    with c_a3:
-        st.metric("⚠️ Condonation Warm Alerts (65-75%)", condonation_count)
-    with c_a4:
-        st.metric("🚨 Critical Detention Notices (<65%)", critical_count)
-
-    st.markdown("---")
-    
-    # Sub-tabs for HOD views
-    sub_h1, sub_h2, sub_h3 = st.tabs([
-        "📋 Course-Level Low Attendance Roster",
-        "👥 Student Aggregate Semester Warning List",
-        "✉️ Generate Official HOD Warm Alert Notice"
-    ])
-    
-    with sub_h1:
-        st.markdown(f"#### Active Course Attendance Defaulters in {hod_dept_select}")
-        sev_filter = st.radio("Filter Severity:", ["All Alerts (<75%)", "🚨 Critical Detention Only (<65%)", "⚠️ Condonation Only (65-75%)"], horizontal=True)
-        sev_param = "Critical" if "Critical" in sev_filter else ("Condonation" if "Condonation" in sev_filter else "ALL")
-        filtered_alerts = aq.get_hod_attendance_alerts(dept_code=hod_dept_select, severity_filter=sev_param)
-        
-        if not filtered_alerts.empty:
-            display_cols = [
-                "roll_no", "student_name", "mobile_no", "gmail_id", "parent_mobile",
-                "cohort_batch", "course_code", "course_name",
-                "total_classes", "classes_attended", "classes_missed", "attendance_pct",
-                "classes_needed_for_75", "alert_level", "faculty_name"
-            ]
-            st.dataframe(
-                filtered_alerts[display_cols].rename(columns={
-                    "roll_no": "Roll No",
-                    "student_name": "Student Name",
-                    "mobile_no": "Student Mobile",
-                    "gmail_id": "Student Gmail",
-                    "parent_mobile": "Parent Mobile",
-                    "cohort_batch": "Cohort",
-                    "course_code": "Course Code",
-                    "course_name": "Course Title",
-                    "total_classes": "Conducted",
-                    "classes_attended": "Attended",
-                    "classes_missed": "Missed",
-                    "attendance_pct": "Att %",
-                    "classes_needed_for_75": "Classes Needed for 75%",
-                    "alert_level": "Alert Status",
-                    "faculty_name": "Faculty Instructor"
-                }),
-                use_container_width=True,
-                hide_index=True
-            )
-            
-            # Export
-            csv_alerts = filtered_alerts[display_cols].to_csv(index=False).encode('utf-8')
-            st.download_button(
-                "📥 Export Course Defaulters Roster (CSV)",
-                data=csv_alerts,
-                file_name=f"hod_attendance_defaulters_{hod_dept_select}.csv",
-                mime="text/csv"
-            )
-        else:
-            st.success("No students currently below 75% attendance for this filter!")
-
-    with sub_h2:
-        st.markdown(f"#### Student-Level Aggregate Semester Attendance Warning ({hod_dept_select})")
-        st.caption("Aggregates attendance across all subjects to identify students facing whole-semester detention.")
-        agg_alerts = aq.get_student_aggregate_attendance_alerts(dept_code=hod_dept_select)
-        if not agg_alerts.empty:
-            st.dataframe(
-                agg_alerts.rename(columns={
-                    "roll_no": "Roll Number",
-                    "student_name": "Student Name",
-                    "mobile_no": "Student Mobile",
-                    "gmail_id": "Student Gmail",
-                    "parent_mobile": "Parent Mobile",
-                    "dept_code": "Dept",
-                    "cohort_batch": "Batch",
-                    "current_semester": "Semester",
-                    "subjects_enrolled": "Subjects Enrolled",
-                    "total_institutional_classes": "Total Held",
-                    "total_classes_attended": "Total Attended",
-                    "overall_attendance_pct": "Overall Sem Att %",
-                    "detained_courses_count": "Detained Courses (<65%)",
-                    "condonation_courses_count": "Condonation Courses (65-75%)"
-                }),
-                use_container_width=True,
-                hide_index=True
-            )
-        else:
-            st.success("All students in this department maintain overall semester attendance above 75%!")
-
-    with sub_h3:
-        st.markdown(f"#### ✉️ Official HOD Attendance Warning Letter & Dispatch Hub")
-        st.caption("Generate a formal institutional notice with registered Student Mobile and Gmail contact channels.")
-        
-        if not alerts_all.empty:
-            student_options = alerts_all[["roll_no", "student_name", "course_code"]].drop_duplicates()
-            student_labels = [f"{r['roll_no']} - {r['student_name']} ({r['course_code']})" for _, r in student_options.iterrows()]
-            chosen_label = st.selectbox("Select Defaulter Student & Subject:", student_labels)
-            
-            chosen_roll = chosen_label.split(" - ")[0]
-            chosen_course = chosen_label.split("(")[-1].replace(")", "")
-            
-            match_row = alerts_all[(alerts_all["roll_no"] == chosen_roll) & (alerts_all["course_code"] == chosen_course)].iloc[0]
-            
-            from datetime import date
-            today_str = date.today().strftime("%d-%B-%Y")
-            
-            notice_text = f"""========================================================================================
-            OFFICE OF THE HEAD OF DEPARTMENT - {dept_full_name.upper()}
-                     ACADEMIC ATTENDANCE WARM ALERT & WARNING MEMO
-========================================================================================
-Date: {today_str}
-
-RECIPIENT CONTACT CHANNELS:
-- Student Mobile                 : {match_row['mobile_no']}
-- Student Gmail                  : {match_row['gmail_id']}
-- Parent Mobile                  : {match_row['parent_mobile']}
-
-To:
-Student: {match_row['student_name']} (Roll No: {match_row['roll_no']})
-Parent / Guardian of {match_row['student_name']}
-Department of {dept_full_name} | Cohort: {match_row['cohort_batch']}
-
-SUBJECT: OFFICIAL WARM ALERT ON CRITICAL ATTENDANCE SHORTAGE IN '{match_row['course_code']} - {match_row['course_name']}'
-
-Dear Student & Parents,
-
-This is a formal communication from the Office of the Head of Department. 
-Based on the institutional Attendance Audit for Semester {match_row['current_semester']}, 
-your attendance status has fallen below the mandatory University academic norms:
-
-ACADEMIC ATTENDANCE RECORD:
-----------------------------------------------------------------------------------------
-- Subject / Course Name          : {match_row['course_name']} ({match_row['course_code']})
-- Faculty Instructor             : {match_row['faculty_name']}
-- Total Classes Conducted        : {match_row['total_classes']}
-- Classes Attended               : {match_row['classes_attended']}
-- Classes Missed                 : {match_row['classes_missed']}
-- Current Attendance Percentage  : {match_row['attendance_pct']}%
-- Mandatory University Benchmark : 75.0%
-- Minimum Classes Needed for 75% : {match_row['classes_needed_for_75']} consecutive classes without absence
-- Formal Warning Status          : {match_row['alert_level']}
-----------------------------------------------------------------------------------------
-
-MANDATORY DIRECTIVE:
-1. You are strictly directed to attend all scheduled classes without any further absence.
-2. If attendance remains below 65.0%, you will be detained and disqualified from writing 
-   the Semester End University Examinations.
-3. You and your parents are required to report to the HOD Office within 3 working days 
-   for an academic counseling session with your Faculty Mentor.
-
-Issued with approval:
-
-{hod_name}
-Head of Department, {dept_full_name}
-Copy to: Dean of Academics, Faculty In-charge, Student File.
-========================================================================================"""
-            st.text_area("Official HOD Notice Preview:", value=notice_text, height=360)
-
-            col_disp1, col_disp2, col_disp3 = st.columns(3)
-            with col_disp1:
-                if st.button("📲 Dispatch SMS to Mobile", use_container_width=True):
-                    st.success(f"✅ SMS Alert sent to Student Mobile ({match_row['mobile_no']}) & Parent Mobile ({match_row['parent_mobile']})!")
-            with col_disp2:
-                if st.button("📧 Send Alert via Gmail", use_container_width=True):
-                    st.success(f"✅ Official Warning Notice dispatched to Gmail ({match_row['gmail_id']})!")
-            with col_disp3:
-                st.download_button(
-                    "📥 Download Alert Memo (.txt)",
-                    data=notice_text,
-                    file_name=f"Attendance_Alert_{match_row['roll_no']}_{match_row['course_code']}.txt",
-                    mime="text/plain",
-                    use_container_width=True
-                )
-        else:
-            st.info("No defaulters available to generate warning notices.")
-
-# ----------------------------------------------------
-# TAB: Student Administration (Join & Modify)
-# ----------------------------------------------------
-with tab_admin:
-    st.subheader("⚙️ Student Administration & Warehouse Enrollment Portal")
-    st.caption("Manage student enrollments, admit new students directly into the Multi-Fact Data Warehouse, or update existing records.")
-
-    admin_sub1, admin_sub2 = st.tabs([
-        "📥 Admit & Join New Student (Warehouse Enrollment)",
-        "✏️ Modify / Change Existing Student"
-    ])
-
-    with admin_sub1:
-        st.markdown("### 📥 Register New Student Admission")
-        st.caption("Enrolls a new student into Dim_Student and automatically initializes corresponding records in Fact_Exam_Performance, Fact_Attendance_Engagement, and Fact_Semester_Summary.")
-
-        with st.form("new_student_form", clear_on_submit=False):
-            f_col1, f_col2, f_col3 = st.columns(3)
-            with f_col1:
-                new_roll = st.text_input("Student Roll Number *", value="24ME1A0021", help="Unique Institutional Roll Number")
-                new_name = st.text_input("Full Name *", value="Vikas Kumar")
-                new_gender = st.selectbox("Gender", ["Male", "Female", "Other"])
-            with f_col2:
-                new_dept = st.selectbox("Department *", ["MECH", "CSE", "AIDS", "ECE", "CIVIL"])
-                new_cohort = st.selectbox("Cohort Batch *", ["2024-2028", "2023-2027", "2022-2026", "2021-2025"])
-                new_adm = st.selectbox("Admission Type", ["Regular", "Lateral Entry", "Management"])
-            with f_col3:
-                new_year = st.number_input("Year of Study", min_value=1, max_value=4, value=1)
-                new_sem = st.number_input("Current Semester", min_value=1, max_value=8, value=1)
-                new_status = st.selectbox("Academic Status", ["Active", "Probation"])
-            
-            st.markdown("#### 📱 Contact Channels (Mobile & Gmail for Attendance Alerts)")
-            c_col1, c_col2, c_col3 = st.columns(3)
-            with c_col1:
-                new_mob = st.text_input("Student Mobile Number", value="+91 98491 00021")
-            with c_col2:
-                new_gmail = st.text_input("Student Gmail Address", value="student.24me@gmail.com")
-            with c_col3:
-                new_pmob = st.text_input("Parent Mobile Number", value="+91 94401 00021")
-
-            st.markdown("#### Initial Performance Setup")
-            p_col1, p_col2 = st.columns(2)
-            with p_col1:
-                init_att = st.slider("Initial Attendance %", min_value=30.0, max_value=100.0, value=80.0, step=0.5)
-            with p_col2:
-                init_marks = st.slider("Initial Academic Marks Avg (out of 100)", min_value=20.0, max_value=100.0, value=75.0, step=0.5)
-
-            submitted = st.form_submit_button("📥 Admit & Join Student into Data Warehouse")
-            if submitted:
-                if not new_roll or not new_name:
-                    st.error("Roll Number and Full Name are mandatory!")
-                else:
-                    stu_payload = {
-                        "roll_no": new_roll.strip().upper(),
-                        "student_name": new_name.strip(),
-                        "gender": new_gender,
-                        "dept_code": new_dept,
-                        "cohort_batch": new_cohort,
-                        "admission_type": new_adm,
-                        "current_year": int(new_year),
-                        "current_semester": int(new_sem),
-                        "academic_status": new_status,
-                        "mobile_no": new_mob.strip(),
-                        "gmail_id": new_gmail.strip(),
-                        "parent_mobile": new_pmob.strip(),
-                        "initial_attendance_pct": init_att,
-                        "initial_marks_avg": init_marks
-                    }
-                    success, msg = aq.add_new_student_to_warehouse(stu_payload)
-                    if success:
-                        st.success(f"✅ {msg}")
-                        st.balloons()
-                    else:
-                        st.error(f"❌ {msg}")
-
-    with admin_sub2:
-        st.markdown("### ✏️ Modify Existing Student Information")
-        st.caption("Select any existing student in the Data Warehouse to modify their demographics, department, semester, or academic status.")
-
-        conn = aq.get_connection()
-        students_list = pd.read_sql("SELECT roll_no, student_name, dept_code FROM dim_student ORDER BY roll_no", conn)
-        conn.close()
-
-        if not students_list.empty:
-            options_edit = [f"{r['roll_no']} - {r['student_name']} ({r['dept_code']})" for _, r in students_list.iterrows()]
-            default_edit_idx = 0
-            selected_edit_str = st.selectbox("Select Student to Modify:", options_edit, index=default_edit_idx)
-            edit_roll = selected_edit_str.split(" - ")[0]
-
-            stu_current, _, _ = aq.get_student_360_profile(edit_roll)
-
-            if stu_current:
-                with st.form("edit_student_form"):
-                    e_col1, e_col2, e_col3 = st.columns(3)
-                    with e_col1:
-                        st.text_input("Roll Number (Read-Only)", value=stu_current["roll_no"], disabled=True)
-                        edit_name = st.text_input("Student Name", value=stu_current["student_name"])
-                        gender_idx = ["Male", "Female", "Other"].index(stu_current["gender"]) if stu_current["gender"] in ["Male", "Female", "Other"] else 0
-                        edit_gender = st.selectbox("Gender", ["Male", "Female", "Other"], index=gender_idx)
-                    with e_col2:
-                        dept_list = ["MECH", "CSE", "AIDS", "ECE", "CIVIL"]
-                        d_idx = dept_list.index(stu_current["dept_code"]) if stu_current["dept_code"] in dept_list else 0
-                        edit_dept = st.selectbox("Department", dept_list, index=d_idx)
-                        
-                        cohort_list = ["2024-2028", "2023-2027", "2022-2026", "2021-2025"]
-                        c_idx = cohort_list.index(stu_current["cohort_batch"]) if stu_current["cohort_batch"] in cohort_list else 0
-                        edit_cohort = st.selectbox("Cohort Batch", cohort_list, index=c_idx)
-
-                        adm_list = ["Regular", "Lateral Entry", "Management"]
-                        a_idx = adm_list.index(stu_current["admission_type"]) if stu_current["admission_type"] in adm_list else 0
-                        edit_adm = st.selectbox("Admission Type", adm_list, index=a_idx)
-                    with e_col3:
-                        edit_year = st.number_input("Current Year", min_value=1, max_value=4, value=int(stu_current["current_year"]))
-                        edit_sem = st.number_input("Current Semester", min_value=1, max_value=8, value=int(stu_current["current_semester"]))
-                        status_list = ["Active", "Probation", "Graduated", "On-Leave"]
-                        s_idx = status_list.index(stu_current["academic_status"]) if stu_current["academic_status"] in status_list else 0
-                        edit_status = st.selectbox("Academic Status", status_list, index=s_idx)
-
-                    st.markdown("#### 📱 Contact Channels (Mobile & Gmail for Attendance Alerts)")
-                    ce_col1, ce_col2, ce_col3 = st.columns(3)
-                    with ce_col1:
-                        edit_mob = st.text_input("Student Mobile Number", value=stu_current.get("mobile_no", "+91 98491 54020"))
-                    with ce_col2:
-                        edit_gmail = st.text_input("Student Gmail Address", value=stu_current.get("gmail_id", "student@gmail.com"))
-                    with ce_col3:
-                        edit_pmob = st.text_input("Parent Mobile Number", value=stu_current.get("parent_mobile", "+91 94401 54020"))
-
-                    update_btn = st.form_submit_button("💾 Save Updated Student Details")
-                    if update_btn:
-                        update_payload = {
-                            "student_name": edit_name.strip(),
-                            "gender": edit_gender,
-                            "dept_code": edit_dept,
-                            "cohort_batch": edit_cohort,
-                            "admission_type": edit_adm,
-                            "current_year": int(edit_year),
-                            "current_semester": int(edit_sem),
-                            "academic_status": edit_status,
-                            "mobile_no": edit_mob.strip(),
-                            "gmail_id": edit_gmail.strip(),
-                            "parent_mobile": edit_pmob.strip()
-                        }
-                        ok, msg = aq.update_existing_student_in_warehouse(edit_roll, update_payload)
-                        if ok:
-                            st.success(f"✅ {msg}")
-                        else:
-                            st.error(f"❌ {msg}")
 
 # ----------------------------------------------------
 # TAB 2: Cohort & Course Drill-Down Analytics
@@ -753,12 +404,210 @@ with tab4:
     )
 
 # ----------------------------------------------------
+# TAB 5: Student 360° Profile
+# ----------------------------------------------------
+with tab5:
+    st.subheader("Student 360° Comprehensive Academic Profile")
+    
+    # Get all roll numbers
+    conn = aq.get_connection()
+    all_rolls = pd.read_sql("SELECT roll_no, student_name, dept_code FROM dim_student ORDER BY roll_no", conn)
+    conn.close()
+
+    roll_options = all_rolls["roll_no"].tolist()
+    # Default to user's roll number if present!
+    default_idx = roll_options.index("24ME5A5402") if "24ME5A5402" in roll_options else 0
+    selected_roll = st.selectbox("Search & Select Student by Roll Number:", roll_options, index=default_idx)
+
+    stu_info, sem_history, course_history = aq.get_student_360_profile(selected_roll)
+
+    if stu_info:
+        st.markdown("#### Student Metadata Card")
+        c_p1, c_p2, c_p3, c_p4 = st.columns(4)
+        with c_p1:
+            st.write(f"**Name:** {stu_info['student_name']}")
+            st.write(f"**Roll Number:** `{stu_info['roll_no']}`")
+        with c_p2:
+            st.write(f"**Department:** {stu_info['dept_name']} ({stu_info['dept_code']})")
+            st.write(f"**Cohort Batch:** {stu_info['cohort_batch']}")
+        with c_p3:
+            st.write(f"**Admission Type:** {stu_info['admission_type']}")
+            st.write(f"**Current Status:** `{stu_info['academic_status']}`")
+        with c_p4:
+            st.write(f"**Current Year:** Year {stu_info['current_year']}")
+            st.write(f"**Semester:** Sem {stu_info['current_semester']}")
+
+        st.markdown("---")
+        st.markdown("#### Semester-by-Semester Progression")
+        
+        col_t1, col_t2 = st.columns([1, 1])
+        with col_t1:
+            fig_stu_prog = px.line(
+                sem_history,
+                x="semester_name",
+                y="sgpa",
+                markers=True,
+                title="SGPA Trajectory",
+                labels={"semester_name": "Semester", "sgpa": "SGPA"}
+            )
+            fig_stu_prog.update_layout(yaxis_range=[0, 10])
+            st.plotly_chart(fig_stu_prog, use_container_width=True)
+
+        with col_t2:
+            fig_stu_att = px.bar(
+                sem_history,
+                x="semester_name",
+                y="sem_attendance_avg",
+                text="sem_attendance_avg",
+                color="sem_attendance_avg",
+                color_continuous_scale="RdYlGn",
+                range_color=[50, 100],
+                title="Average Attendance % Across Semesters",
+                labels={"semester_name": "Semester", "sem_attendance_avg": "Attendance %"}
+            )
+            fig_stu_att.update_traces(textposition="outside")
+            st.plotly_chart(fig_stu_att, use_container_width=True)
+
+        st.markdown("#### Multi-Fact Detailed Course Transcript")
+        st.dataframe(
+            course_history.rename(columns={
+                "semester_name": "Semester",
+                "course_code": "Code",
+                "course_name": "Subject Name",
+                "credits": "Credits",
+                "course_type": "Type",
+                "internal_marks": "Internal (30)",
+                "external_marks": "External (70)",
+                "total_marks": "Total (100)",
+                "grade_point": "Grade Pt",
+                "letter_grade": "Grade",
+                "is_passed": "Passed",
+                "classes_attended": "Attended",
+                "total_classes": "Total Classes",
+                "attendance_pct": "Att %",
+                "assignment_score_pct": "LMS Score %",
+                "faculty_name": "Faculty Instructor"
+            }),
+            use_container_width=True,
+            hide_index=True
+        )
+
+# ----------------------------------------------------
+# TAB 6: Data Warehouse Architecture & Schema Visualizer
+# ----------------------------------------------------
+with tab6:
+    st.subheader("Multi-Fact Constellation Schema (Galaxy Architecture)")
+    st.markdown("""
+    In Kimball dimensional modeling, an academic institution is best modeled as a **Multi-Fact Constellation (Galaxy Schema)**.
+    Multiple business processes generate measurements at different grains, but share **Conformed Dimensions**.
+    """)
+
+    st.markdown("""
+    ```
+                      +-------------------+
+                      |   DIM_STUDENT     |
+                      | (Student_Key PK)  |
+                      +---------+---------+
+                                |
+               +----------------+----------------+
+               |                                 |
+               v                                 v
+    +----------------------+          +--------------------------+
+    | FACT_EXAM_PERFORMANCE|          | FACT_ATTENDANCE_ENGAGE   |
+    |----------------------|          |--------------------------|
+    | * student_key (FK)   |          | * student_key (FK)       |
+    | * course_key (FK)    |          | * course_key (FK)        |
+    | * department_key (FK)|          | * department_key (FK)    |
+    | * time_key (FK)      |          | * time_key (FK)          |
+    | * faculty_key (FK)   |          |                          |
+    | Measures:            |          | Measures:                |
+    | - internal_marks     |          | - total_classes          |
+    | - external_marks     |          | - classes_attended       |
+    | - total_marks        |          | - attendance_pct         |
+    | - grade_point        |          | - condonation_risk_flag  |
+    | - is_passed          |          | - detention_risk_flag    |
+    | - is_backlog         |          | - assignment_score_pct   |
+    +----------+-----------+          +------------+-------------+
+               |                                   |
+               +----------------+------------------+
+                                |
+                   +------------+------------+
+                   |       CONFORMED         |
+                   |       DIMENSIONS        |
+                   +------------+------------+
+                                |
+        +-----------------------+-----------------------+
+        |                       |                       |
+        v                       v                       v
+    +----------------+    +---------------+    +-------------------+
+    |  DIM_COURSE    |    |DIM_DEPARTMENT |    | DIM_TIME_SEMESTER |
+    | (Course_Key PK)|    | (Dept_Key PK) |    |  (Time_Key PK)    |
+    +----------------+    +---------------+    +-------------------+
+    ```
+    """)
+
+    st.markdown("### Warehouse Storage & Volume Metrics")
+    metrics = aq.get_warehouse_storage_metrics()
+    c_m1, c_m2, c_m3 = st.columns(3)
+    with c_m1:
+        st.markdown("#### Conformed Dimensions")
+        st.write(f"- **Dim_Department:** {metrics['dim_department']} records")
+        st.write(f"- **Dim_Faculty:** {metrics['dim_faculty']} records")
+        st.write(f"- **Dim_Course:** {metrics['dim_course']} records")
+        st.write(f"- **Dim_Time_Semester:** {metrics['dim_time_semester']} records")
+        st.write(f"- **Dim_Student:** {metrics['dim_student']} records")
+    with c_m2:
+        st.markdown("#### Fact Tables")
+        st.write(f"- **Fact_Exam_Performance:** {metrics['fact_exam_performance']:,} facts")
+        st.write(f"- **Fact_Attendance_Engagement:** {metrics['fact_attendance_engagement']:,} facts")
+        st.write(f"- **Fact_Semester_Summary:** {metrics['fact_semester_summary']:,} periodic snapshots")
+    with c_m3:
+        db_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "warehouse", "academic_dw.db")
+        db_size_kb = round(os.path.getsize(db_file) / 1024, 1) if os.path.exists(db_file) else 0
+        st.markdown("#### Database Engine")
+        st.write(f"- **Storage Engine:** SQLite 3 OLAP Mart")
+        st.write(f"- **Database Size:** {db_size_kb} KB")
+        st.write(f"- **Indexing:** B-Tree Foreign Key Indexes Active")
+
+    st.markdown("---")
+    st.markdown("### 💻 Interactive Live OLAP SQL Query Console")
+    st.caption("Execute custom SQL queries against the multi-fact schema.")
+    
+    default_query = """SELECT 
+    d.dept_code,
+    c.course_type,
+    COUNT(fep.performance_key) AS enrollments,
+    ROUND(AVG(fep.total_marks), 2) AS mean_marks,
+    ROUND(AVG(fae.attendance_pct), 2) AS mean_attendance,
+    ROUND(SUM(CASE WHEN fep.is_passed = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(fep.performance_key), 1) AS pass_pct
+FROM fact_exam_performance fep
+JOIN fact_attendance_engagement fae 
+    ON fep.student_key = fae.student_key 
+    AND fep.course_key = fae.course_key 
+    AND fep.time_key = fae.time_key
+JOIN dim_department d ON fep.department_key = d.department_key
+JOIN dim_course c ON fep.course_key = c.course_key
+GROUP BY d.dept_code, c.course_type
+ORDER BY d.dept_code, pass_pct DESC;"""
+
+    user_sql = st.text_area("Enter SQL Query:", value=default_query, height=160)
+    if st.button("▶️ Execute Query"):
+        try:
+            conn = aq.get_connection()
+            result_df = pd.read_sql(user_sql, conn)
+            conn.close()
+            st.success(f"Query returned {len(result_df)} rows.")
+            st.dataframe(result_df, use_container_width=True)
+        except Exception as e:
+            st.error(f"SQL Execution Error: {e}")
+
+# ----------------------------------------------------
 # Footer
 # ----------------------------------------------------
 st.markdown("---")
 st.markdown(
     "<div style='text-align: center; color: #94a3b8; font-size: 0.85rem;'>"
-    "Academic Performance Multi-Fact Data Warehouse & Analytics | Institutional Academic Analytics System"
+    "Academic Performance Multi-Fact Data Warehouse & Analytics | Bethi Ravi Kiran (24ME5A5402) | Supervised by Mr. K. Rajendra"
     "</div>",
     unsafe_allow_html=True
 )
