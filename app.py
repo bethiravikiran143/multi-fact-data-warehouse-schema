@@ -129,13 +129,12 @@ if st.sidebar.button("🔄 Reload / Re-sync Warehouse"):
 # ----------------------------------------------------
 # Main Tabs Navigation
 # ----------------------------------------------------
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📊 Institutional Overview",
     "🔍 Cohort & Course Drill-Down",
     "📈 Multi-Fact Cross Analysis",
     "⚠️ Risk Early Warning (ML)",
-    "👤 Student 360° Profile",
-    "🏛️ Schema Architecture"
+    "👤 Student 360° Profile"
 ])
 
 # ----------------------------------------------------
@@ -492,115 +491,6 @@ with tab5:
             use_container_width=True,
             hide_index=True
         )
-
-# ----------------------------------------------------
-# TAB 6: Data Warehouse Architecture & Schema Visualizer
-# ----------------------------------------------------
-with tab6:
-    st.subheader("Multi-Fact Constellation Schema (Galaxy Architecture)")
-    st.markdown("""
-    In Kimball dimensional modeling, an academic institution is best modeled as a **Multi-Fact Constellation (Galaxy Schema)**.
-    Multiple business processes generate measurements at different grains, but share **Conformed Dimensions**.
-    """)
-
-    st.markdown("""
-    ```
-                      +-------------------+
-                      |   DIM_STUDENT     |
-                      | (Student_Key PK)  |
-                      +---------+---------+
-                                |
-               +----------------+----------------+
-               |                                 |
-               v                                 v
-    +----------------------+          +--------------------------+
-    | FACT_EXAM_PERFORMANCE|          | FACT_ATTENDANCE_ENGAGE   |
-    |----------------------|          |--------------------------|
-    | * student_key (FK)   |          | * student_key (FK)       |
-    | * course_key (FK)    |          | * course_key (FK)        |
-    | * department_key (FK)|          | * department_key (FK)    |
-    | * time_key (FK)      |          | * time_key (FK)          |
-    | * faculty_key (FK)   |          |                          |
-    | Measures:            |          | Measures:                |
-    | - internal_marks     |          | - total_classes          |
-    | - external_marks     |          | - classes_attended       |
-    | - total_marks        |          | - attendance_pct         |
-    | - grade_point        |          | - condonation_risk_flag  |
-    | - is_passed          |          | - detention_risk_flag    |
-    | - is_backlog         |          | - assignment_score_pct   |
-    +----------+-----------+          +------------+-------------+
-               |                                   |
-               +----------------+------------------+
-                                |
-                   +------------+------------+
-                   |       CONFORMED         |
-                   |       DIMENSIONS        |
-                   +------------+------------+
-                                |
-        +-----------------------+-----------------------+
-        |                       |                       |
-        v                       v                       v
-    +----------------+    +---------------+    +-------------------+
-    |  DIM_COURSE    |    |DIM_DEPARTMENT |    | DIM_TIME_SEMESTER |
-    | (Course_Key PK)|    | (Dept_Key PK) |    |  (Time_Key PK)    |
-    +----------------+    +---------------+    +-------------------+
-    ```
-    """)
-
-    st.markdown("### Warehouse Storage & Volume Metrics")
-    metrics = aq.get_warehouse_storage_metrics()
-    c_m1, c_m2, c_m3 = st.columns(3)
-    with c_m1:
-        st.markdown("#### Conformed Dimensions")
-        st.write(f"- **Dim_Department:** {metrics['dim_department']} records")
-        st.write(f"- **Dim_Faculty:** {metrics['dim_faculty']} records")
-        st.write(f"- **Dim_Course:** {metrics['dim_course']} records")
-        st.write(f"- **Dim_Time_Semester:** {metrics['dim_time_semester']} records")
-        st.write(f"- **Dim_Student:** {metrics['dim_student']} records")
-    with c_m2:
-        st.markdown("#### Fact Tables")
-        st.write(f"- **Fact_Exam_Performance:** {metrics['fact_exam_performance']:,} facts")
-        st.write(f"- **Fact_Attendance_Engagement:** {metrics['fact_attendance_engagement']:,} facts")
-        st.write(f"- **Fact_Semester_Summary:** {metrics['fact_semester_summary']:,} periodic snapshots")
-    with c_m3:
-        db_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "warehouse", "academic_dw.db")
-        db_size_kb = round(os.path.getsize(db_file) / 1024, 1) if os.path.exists(db_file) else 0
-        st.markdown("#### Database Engine")
-        st.write(f"- **Storage Engine:** SQLite 3 OLAP Mart")
-        st.write(f"- **Database Size:** {db_size_kb} KB")
-        st.write(f"- **Indexing:** B-Tree Foreign Key Indexes Active")
-
-    st.markdown("---")
-    st.markdown("### 💻 Interactive Live OLAP SQL Query Console")
-    st.caption("Execute custom SQL queries against the multi-fact schema.")
-    
-    default_query = """SELECT 
-    d.dept_code,
-    c.course_type,
-    COUNT(fep.performance_key) AS enrollments,
-    ROUND(AVG(fep.total_marks), 2) AS mean_marks,
-    ROUND(AVG(fae.attendance_pct), 2) AS mean_attendance,
-    ROUND(SUM(CASE WHEN fep.is_passed = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(fep.performance_key), 1) AS pass_pct
-FROM fact_exam_performance fep
-JOIN fact_attendance_engagement fae 
-    ON fep.student_key = fae.student_key 
-    AND fep.course_key = fae.course_key 
-    AND fep.time_key = fae.time_key
-JOIN dim_department d ON fep.department_key = d.department_key
-JOIN dim_course c ON fep.course_key = c.course_key
-GROUP BY d.dept_code, c.course_type
-ORDER BY d.dept_code, pass_pct DESC;"""
-
-    user_sql = st.text_area("Enter SQL Query:", value=default_query, height=160)
-    if st.button("▶️ Execute Query"):
-        try:
-            conn = aq.get_connection()
-            result_df = pd.read_sql(user_sql, conn)
-            conn.close()
-            st.success(f"Query returned {len(result_df)} rows.")
-            st.dataframe(result_df, use_container_width=True)
-        except Exception as e:
-            st.error(f"SQL Execution Error: {e}")
 
 # ----------------------------------------------------
 # Footer
