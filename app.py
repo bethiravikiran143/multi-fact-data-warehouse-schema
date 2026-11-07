@@ -85,18 +85,6 @@ st.markdown("""
 st.markdown('<div class="main-header">🎓 Student-Performance Multi-Fact Data Warehouse & Analytics</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-header">Design and Development of a Working Prototype for Student-Performance Data Warehouse Across Departments Using A Multi-Fact Schema</div>', unsafe_allow_html=True)
 
-meta_col1, meta_col2, meta_col3, meta_col4 = st.columns(4)
-with meta_col1:
-    st.markdown('<div class="meta-badge">👤 <b>Student:</b> BETHI RAVI KIRAN</div>', unsafe_allow_html=True)
-with meta_col2:
-    st.markdown('<div class="meta-badge">🆔 <b>Roll No:</b> 24ME5A5402 (Sec A)</div>', unsafe_allow_html=True)
-with meta_col3:
-    st.markdown('<div class="meta-badge">👨‍🏫 <b>Guide:</b> Mr. K. Rajendra</div>', unsafe_allow_html=True)
-with meta_col4:
-    st.markdown('<div class="meta-badge">🏛️ <b>Domain:</b> Big Data Analytics & DW</div>', unsafe_allow_html=True)
-
-st.markdown("---")
-
 # ----------------------------------------------------
 # Sidebar Filters & Controls
 # ----------------------------------------------------
@@ -415,8 +403,7 @@ with tab5:
     conn.close()
 
     roll_options = all_rolls["roll_no"].tolist()
-    # Default to user's roll number if present!
-    default_idx = roll_options.index("24ME5A5402") if "24ME5A5402" in roll_options else 0
+    default_idx = 0
     selected_roll = st.selectbox("Search & Select Student by Roll Number:", roll_options, index=default_idx)
 
     stu_info, sem_history, course_history = aq.get_student_360_profile(selected_roll)
@@ -498,7 +485,7 @@ with tab5:
 st.markdown("---")
 st.markdown(
     "<div style='text-align: center; color: #94a3b8; font-size: 0.85rem;'>"
-    "Academic Performance Multi-Fact Data Warehouse & Analytics | Bethi Ravi Kiran (24ME5A5402) | Supervised by Mr. K. Rajendra"
+    "Academic Performance Multi-Fact Data Warehouse & Analytics | Institutional Big Data Prototype"
     "</div>",
     unsafe_allow_html=True
 )
